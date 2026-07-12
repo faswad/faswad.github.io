@@ -41,6 +41,7 @@
       <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي">
         <a href="#features">المزايا</a>
         <a href="#gallery">صور التطبيق</a>
+        <a href="#csv-template">نموذج CSV</a>
         <a href="#download">التنزيل</a>
         <a href="#install">التثبيت</a>
         <a href="#faq">الأسئلة</a>
@@ -193,7 +194,75 @@
       </div>
     </section>
 
-    <section id="download" class="section section-soft">
+    <section id="csv-template" class="section section-soft csv-section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">نموذج ملف مواقيت الصلاة</p>
+          <h2 class="section-title">حمّل ملف CSV جاهزًا أو استخدمه كنموذج</h2>
+          <p class="section-description">
+            الملف المرفق يحتوي على مواقيت مدينة الموصل لمدة سنة كاملة، ويمكن استخدامه مباشرةً
+            أو نسخ بنيته لإنشاء ملف خاص بمدينة أخرى بعد مراجعة المواقيت.
+          </p>
+        </header>
+
+        <div class="csv-layout">
+          <article class="csv-info-card reveal">
+            <span class="csv-file-badge">CSV · 365 يومًا</span>
+            <h3>ملف مواقيت الموصل</h3>
+            <p>
+              لا تغيّر أسماء الأعمدة أو ترتيبها. اكتب جميع الأوقات بصيغة
+              <code>HH:MM</code> مثل <code>05:47</code>، واحفظ الملف بترميز UTF-8.
+            </p>
+
+            <div class="csv-actions">
+              <a class="button button-primary"
+                 href="assets/downloads/mosul_prayer_times.csv"
+                 download="mosul_prayer_times.csv">
+                تنزيل نموذج CSV
+              </a>
+              <a class="button button-secondary"
+                 href="assets/downloads/mosul_prayer_times.csv"
+                 target="_blank" rel="noopener">
+                عرض الملف
+              </a>
+            </div>
+
+            <ul class="csv-rules">
+              <li>الأعمدة المطلوبة: <span dir="ltr">Month_Arabic, Day, Fajr, Shuruq, Dhuhr, Asr, Maghrib, Isha</span></li>
+              <li>يجب أن يحتوي كل يوم على صف مستقل.</li>
+              <li>لا تضف أعمدة جديدة ولا تحذف أي عمود مطلوب.</li>
+              <li>راجع المواقيت قبل اعتماد الملف داخل المسجد.</li>
+            </ul>
+          </article>
+
+          <article class="csv-preview-card reveal" aria-labelledby="csvPreviewTitle">
+            <div class="csv-preview-heading">
+              <div>
+                <p class="csv-preview-kicker">معاينة من الملف</p>
+                <h3 id="csvPreviewTitle">الشكل المطلوب للصفوف والأعمدة</h3>
+              </div>
+              <span>أول 6 أيام</span>
+            </div>
+
+            <div class="csv-table-scroll" tabindex="0" aria-label="معاينة جدول ملف مواقيت الصلاة">
+              <table class="csv-table" dir="ltr">
+                <thead><tr><th scope="col">Month_Arabic</th><th scope="col">Day</th><th scope="col">Fajr</th><th scope="col">Shuruq</th><th scope="col">Dhuhr</th><th scope="col">Asr</th><th scope="col">Maghrib</th><th scope="col">Isha</th></tr></thead>
+                <tbody>
+                  <tr><td>كانون الثاني</td><td>1</td><td>05:47</td><td>07:16</td><td>12:16</td><td>02:49</td><td>05:09</td><td>06:30</td></tr>
+<tr><td>كانون الثاني</td><td>2</td><td>05:47</td><td>07:16</td><td>12:17</td><td>02:49</td><td>05:09</td><td>06:31</td></tr>
+<tr><td>كانون الثاني</td><td>3</td><td>05:47</td><td>07:16</td><td>12:17</td><td>02:50</td><td>05:10</td><td>06:32</td></tr>
+<tr><td>كانون الثاني</td><td>4</td><td>05:48</td><td>07:16</td><td>12:17</td><td>02:51</td><td>05:11</td><td>06:32</td></tr>
+<tr><td>كانون الثاني</td><td>5</td><td>05:48</td><td>07:16</td><td>12:18</td><td>02:52</td><td>05:12</td><td>06:33</td></tr>
+<tr><td>كانون الثاني</td><td>6</td><td>05:48</td><td>07:16</td><td>12:18</td><td>02:52</td><td>05:12</td><td>06:34</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section">
       <div class="container download-grid">
         <article class="download-card reveal">
           <p class="section-kicker">التنزيل الرسمي</p>
@@ -266,7 +335,35 @@
 
           <details class="reveal">
             <summary>ما صيغة ملف مواقيت الصلاة؟</summary>
-            <p>ملف CSV مطابق للنموذج، وتكون أوقات الصلاة بصيغة HH:MM.</p>
+            <p>
+              يجب أن يكون بصيغة CSV، وبالأعمدة التالية وبالترتيب نفسه:
+              <span dir="ltr">Month_Arabic, Day, Fajr, Shuruq, Dhuhr, Asr, Maghrib, Isha</span>.
+              وتُكتب الأوقات بصيغة <span dir="ltr">HH:MM</span> مثل <span dir="ltr">05:47</span>.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>أين أجد نموذج ملف CSV جاهزًا؟</summary>
+            <p>
+              يوجد قسم <a class="faq-inline-link" href="#csv-template">نموذج ملف مواقيت الصلاة</a>
+              في هذه الصفحة. يمكنك تنزيل ملف مواقيت الموصل أو فتحه لمشاهدة شكل الأعمدة والصفوف.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل أستطيع تعديل ملف CSV في Excel أو أي برنامج جداول؟</summary>
+            <p>
+              نعم. عدّل القيم فقط، ثم احفظ الملف بصيغة CSV وبترميز UTF-8.
+              لا تغيّر أسماء الأعمدة أو ترتيبها، ولا تحذف أي عمود مطلوب.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل مواقيت ملف النموذج مناسبة لكل المدن؟</summary>
+            <p>
+              لا. الملف المرفق نموذج لمواقيت مدينة الموصل. عند استخدامه لمدينة أخرى،
+              استبدل جميع المواقيت ببيانات صحيحة وراجعها قبل اعتمادها في المسجد.
+            </p>
           </details>
 
           <details class="reveal">

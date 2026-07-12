@@ -1,20 +1,26 @@
-# Wide desktop redesign for Firas Salat
+# Wide Firas Salat website with downloadable CSV model
 
-This version uses the full width of desktop screens instead of a narrow central card.
+This package adds a full CSV section to:
 
-## Replace the old website
+- https://faswad.github.io/salat/
 
-1. Extract `salat_wide_desktop_replacement.zip`.
-2. Open your cloned `faswad.github.io` repository in Finder/File Explorer.
-3. Delete the old `salat` folder.
+The sample file is available at:
+
+- https://faswad.github.io/salat/assets/downloads/mosul_prayer_times.csv
+
+## Upload with GitHub Desktop
+
+1. Extract `salat_wide_with_csv_replacement.zip`.
+2. Open the cloned `faswad.github.io` repository.
+3. Delete the old local `salat` folder.
 4. Copy the new extracted `salat` folder into the repository.
-5. Open GitHub Desktop.
-6. Commit: `Use wide desktop Salat website`
-7. Click `Push origin`.
-8. Wait for GitHub Pages deployment.
-9. Open: https://faswad.github.io/salat/
-10. Hard refresh:
-   - Mac: Command + Shift + R
-   - Windows: Ctrl + Shift + R
+5. Commit: `Add CSV prayer-times template`.
+6. Click `Push origin`.
+7. Wait for GitHub Pages deployment.
+8. Open https://faswad.github.io/salat/ and perform a hard refresh.
 
-The new CSS and JavaScript filenames are different, so the browser should not reuse the old cached design.
+The CSV is stored inside:
+
+`salat/assets/downloads/mosul_prayer_times.csv`
+
+Do not remove this file unless you also remove or change its links in `salat/index.html`.
