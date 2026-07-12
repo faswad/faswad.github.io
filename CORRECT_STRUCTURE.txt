@@ -1,0 +1,13 @@
+CORRECT WEBSITE STRUCTURE
+
+ROOT PERSONAL WEBSITE:
+index.html
+assets/
+
+SALAT APPLICATION WEBSITE:
+salat/index.html
+salat/assets/
+
+DO NOT place the personal index.html inside the salat folder.
+DO NOT place the salat folder inside another salat folder.
+DO NOT upload CV PDF files.

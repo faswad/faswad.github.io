@@ -1,12 +1,23 @@
 {
-  "name": "Dr. Firas Aswad",
-  "short_name": "Firas Aswad",
+  "name": "شاشة مواقيت الصلاة للمساجد",
+  "short_name": "مواقيت المساجد",
+  "lang": "ar",
+  "dir": "rtl",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0b1524",
-  "theme_color": "#0b1524",
+  "background_color": "#050c16",
+  "theme_color": "#050c16",
   "icons": [
-    {"src":"assets/images/icon-192.png","sizes":"192x192","type":"image/png"},
-    {"src":"assets/images/icon-512.png","sizes":"512x512","type":"image/png"}
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

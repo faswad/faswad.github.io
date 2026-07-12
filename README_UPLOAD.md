@@ -1,24 +1,35 @@
-# Personal website for faswad.github.io
+# Correct GitHub Pages structure
 
-This package replaces the ROOT personal website and keeps the existing `salat` application at:
+This package creates two separate websites:
 
-`https://faswad.github.io/salat/`
+- Personal website: https://faswad.github.io/
+- Salat application: https://faswad.github.io/salat/
 
-## Root-only replacement
+The CV PDF files are NOT included and there are no CV download buttons.
+Information from the CV was used only to write the personal profile.
 
-1. Extract `faswad_personal_root_replacement.zip`.
-2. Open your cloned `faswad.github.io` repository.
-3. Keep the existing `salat` folder.
-4. Replace the root `index.html`, root `assets` folder, `404.html`, `.nojekyll`, `site.webmanifest`, `robots.txt`, and `sitemap.xml` with the files from this package.
-5. Commit: `Add professional personal website`
-6. Push origin.
-7. Wait for GitHub Pages deployment.
-8. Open `https://faswad.github.io/`.
+## Recommended upload method using GitHub Desktop
 
-## Complete repository package
+1. Extract `faswad_correct_personal_and_salat.zip`.
+2. Open your cloned `faswad.github.io` repository folder.
+3. Delete the current website files and folders inside the repository, but do not delete the hidden `.git` folder.
+4. Copy every extracted item into the repository folder.
+5. Confirm this exact structure:
 
-The complete ZIP also includes the current Salat website with CSV template support.
+   index.html
+   assets/
+   salat/
+     index.html
+     assets/
 
-## Public contact information
+6. In GitHub Desktop, commit with:
 
-The website includes the email and professional social links from the supplied CVs. The phone number was intentionally not displayed on the public homepage; it remains inside the downloadable CV files.
+   Restore personal site and Salat app structure
+
+7. Click `Push origin`.
+8. Wait for the Pages deployment to finish.
+9. Test:
+   - https://faswad.github.io/
+   - https://faswad.github.io/salat/
+
+The APK Release is separate and will not be deleted by replacing website files.
