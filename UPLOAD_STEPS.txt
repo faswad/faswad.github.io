@@ -1,0 +1,38 @@
+FASWAD GITHUB PAGES — UPLOAD STEPS
+
+1. Extract this ZIP file.
+
+2. Open this repository:
+   https://github.com/faswad/faswad.github.io
+
+3. Upload the CONTENTS of the extracted folder to the repository root:
+   - index.html
+   - README.md
+   - .nojekyll
+   - the complete salat folder
+
+4. Do not create a GitHub Release for the website files.
+
+5. Use GitHub Desktop if the browser does not upload folders:
+   - Clone faswad/faswad.github.io
+   - Copy all extracted files into the cloned repository folder
+   - Commit to main
+   - Push origin
+
+6. Enable GitHub Pages:
+   Repository Settings → Pages
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+   Save
+
+7. Open:
+   https://faswad.github.io/
+   https://faswad.github.io/salat/
+
+APK DOWNLOAD LINK ALREADY SET TO:
+https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk
+
+IMPORTANT:
+The release asset must be named exactly:
+firas-prayer-display.apk

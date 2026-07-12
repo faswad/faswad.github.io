@@ -40,3 +40,12 @@ The website download button is already configured for:
 APK SHA-256:
 
 `f313757ab96c3212bcb657098163428c8b9d346c68383c44486521ed53aed424`
+
+
+## Download link used in this package
+
+`https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk`
+
+The APK release asset must be named exactly:
+
+`firas-prayer-display.apk`
