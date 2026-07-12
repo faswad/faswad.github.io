@@ -6,18 +6,18 @@
   const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
 
   const menuButton = $("#menuButton");
-  const nav = $("#mainNav");
+  const navigation = $("#mainNav");
 
-  if (menuButton && nav) {
+  if (menuButton && navigation) {
     menuButton.addEventListener("click", () => {
-      const expanded = menuButton.getAttribute("aria-expanded") === "true";
-      menuButton.setAttribute("aria-expanded", String(!expanded));
-      nav.classList.toggle("is-open", !expanded);
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      navigation.classList.toggle("is-open", !isOpen);
     });
 
-    $$("a", nav).forEach((link) => {
+    $$("a", navigation).forEach((link) => {
       link.addEventListener("click", () => {
-        nav.classList.remove("is-open");
+        navigation.classList.remove("is-open");
         menuButton.setAttribute("aria-expanded", "false");
       });
     });
@@ -39,47 +39,46 @@
     node.textContent = new Date().getFullYear();
   });
 
-  // The exact URL is also present directly in the HTML as a fallback.
+  // Keep a direct href in the HTML, then refresh it from config.
   $$(".js-apk-download").forEach((button) => {
     if (config.apkUrl) button.href = config.apkUrl;
-    button.removeAttribute("aria-disabled");
   });
 
-  const galleryDialog = $("#galleryDialog");
-  const galleryImage = $("#galleryDialogImage");
-  const galleryCaption = $("#galleryDialogCaption");
-  const galleryClose = $("#galleryClose");
+  const modal = $("#imageModal");
+  const modalImage = $("#imageModalPicture");
+  const modalCaption = $("#imageModalCaption");
+  const modalClose = $("#imageModalClose");
 
-  $$(".gallery-trigger").forEach((button) => {
+  $$(".image-zoom").forEach((button) => {
     button.addEventListener("click", () => {
-      if (!galleryDialog || !galleryImage) return;
-      galleryImage.src = button.dataset.image || "";
-      galleryImage.alt = button.dataset.alt || "";
-      if (galleryCaption) galleryCaption.textContent = button.dataset.caption || "";
-      galleryDialog.showModal();
+      if (!modal || !modalImage) return;
+      modalImage.src = button.dataset.image || "";
+      modalImage.alt = button.dataset.alt || "";
+      if (modalCaption) modalCaption.textContent = button.dataset.caption || "";
+      modal.showModal();
     });
   });
 
-  if (galleryDialog && galleryClose) {
-    galleryClose.addEventListener("click", () => galleryDialog.close());
-    galleryDialog.addEventListener("click", (event) => {
-      if (event.target === galleryDialog) galleryDialog.close();
+  if (modal && modalClose) {
+    modalClose.addEventListener("click", () => modal.close());
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) modal.close();
     });
   }
 
   if ("IntersectionObserver" in window) {
-    const revealObserver = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
+          observer.unobserve(entry.target);
         });
       },
       { threshold: 0.12 }
     );
 
-    $$(".reveal").forEach((node) => revealObserver.observe(node));
+    $$(".reveal").forEach((node) => observer.observe(node));
   } else {
     $$(".reveal").forEach((node) => node.classList.add("is-visible"));
   }

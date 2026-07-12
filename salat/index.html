@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07182a">
-  <meta name="description" content="تطبيق شاشة مواقيت الصلاة للمساجد: أوقات الصلاة والإقامة، العد التنازلي، الأذان، التنبيهات، الطقس، والملفات المخصصة.">
+  <meta name="theme-color" content="#050c16">
+  <meta name="description" content="تطبيق مجاني لعرض مواقيت الصلاة والإقامة في المساجد، مع الوضعين العمودي والأفقي والأذان والتنبيهات والطقس والملفات المخصصة.">
   <meta name="author" content="الدكتور فراس اسود العبادي">
   <meta property="og:title" content="شاشة مواقيت الصلاة للمساجد">
   <meta property="og:description" content="تطبيق Android مجاني ووقف خيري لخدمة المساجد.">
@@ -23,17 +23,17 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="الصفحة الرئيسية">
-        <img class="brand-logo" src="assets/images/firas-logo.webp" alt="" width="56" height="56">
+        <img class="brand-logo" src="assets/images/logo-fm.webp" alt="" width="44" height="44">
         <span class="brand-copy">
           <span class="brand-title">شاشة مواقيت الصلاة للمساجد</span>
-          <span class="brand-subtitle">تصميم وتطوير الدكتور فراس اسود العبادي</span>
+          <span class="brand-subtitle">FIRAS ASWAD · MOSQUE DISPLAY</span>
         </span>
       </a>
 
       <button id="menuButton" class="menu-button" type="button"
               aria-expanded="false" aria-controls="mainNav"
               aria-label="فتح قائمة التنقل">
-        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <svg width="23" height="23" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"/>
         </svg>
       </button>
@@ -51,42 +51,47 @@
 
   <main id="mainContent">
     <section class="hero">
-      <div class="container">
-        <div class="hero-shell reveal">
-          <div class="hero-top">
-            <img class="hero-logo" src="assets/images/firas-logo.webp"
-                 alt="شعار فراس أسود" width="156" height="156">
-            <span class="hero-kicker">تطبيق Android مجاني لخدمة المساجد</span>
-            <h1 class="hero-title">
-              مواقيت الصلاة
-              <span>بواجهة تليق ببيوت الله</span>
-            </h1>
-            <p class="hero-description">
-              شاشة متكاملة لعرض أوقات الصلاة والإقامة والوقت المتبقي، مع الوضعين العمودي والأفقي،
-              والأذان والتنبيهات ودرجة الحرارة وملفات المواقيت والصور المخصصة.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary js-apk-download"
-                 href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
-                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3ZM5 19h14v2H5v-2Z"/>
-                </svg>
-                تنزيل ملف APK
-              </a>
-              <a class="button button-secondary" href="#gallery">مشاهدة الواجهات</a>
-            </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="hero-badge">تطبيق Android مجاني لخدمة المساجد</span>
+
+          <h1>
+            شاشة مواقيت صلاة
+            <span>واضحة، أنيقة، وعملية</span>
+          </h1>
+
+          <p class="hero-description">
+            تطبيق متكامل لعرض أوقات الصلاة والإقامة والوقت المتبقي،
+            مع الوضعين العمودي والأفقي، والأذان والتنبيهات ودرجة الحرارة
+            وملفات المواقيت والصور المخصصة.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3ZM5 19h14v2H5v-2Z"/>
+              </svg>
+              تنزيل ملف APK
+            </a>
+
+            <a class="button button-secondary" href="#gallery">عرض صور التطبيق</a>
           </div>
 
-          <div class="hero-preview">
+          <div class="hero-meta" aria-label="معلومات سريعة">
+            <span>مجاني ووقف خيري</span>
+            <span>Android APK</span>
+            <span>عمودي وأفقي</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="product-frame">
             <img src="assets/images/app-landscape.webp"
                  alt="واجهة التطبيق الأفقية لمواقيت الصلاة">
           </div>
 
-          <div class="hero-facts" aria-label="معلومات سريعة">
-            <div class="hero-fact">مجاني ووقف خيري</div>
-            <div class="hero-fact">Android APK</div>
-            <div class="hero-fact">واجهة عمودية وأفقية</div>
-            <div class="hero-fact">إعدادات المسجد محليًا</div>
+          <div class="logo-float" aria-hidden="true">
+            <img src="assets/images/logo-fm.webp" alt="">
           </div>
         </div>
       </div>
@@ -96,47 +101,47 @@
       <div class="container">
         <header class="section-header reveal">
           <p class="section-kicker">مزايا التطبيق</p>
-          <h2 class="section-title">كل ما تحتاجه شاشة المسجد في مكان واحد</h2>
+          <h2 class="section-title">كل ما تحتاجه شاشة المسجد</h2>
           <p class="section-description">
-            تصميم واضح من مسافة بعيدة، مع مرونة كاملة في ملفات الصلاة والصوت والصور.
+            تصميم واضح من مسافة بعيدة، وإعدادات مرنة تناسب المساجد والشاشات المختلفة.
           </p>
         </header>
 
         <div class="feature-grid">
-          <article class="feature-card is-highlighted reveal">
+          <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">☀</div>
             <h3>مواقيت الصلاة والإقامة</h3>
-            <p>عرض الفجر والشروق والظهر والعصر والمغرب والعشاء مع أوقات الإقامة وصلاة الضحى.</p>
+            <p>عرض الصلوات الست وأوقات الإقامة وصلاة الضحى بصورة واضحة.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">⏱</div>
-            <h3>عداد الوقت المتبقي</h3>
-            <p>عداد واضح وثابت يبين الوقت المتبقي للصلاة أو الإقامة التالية.</p>
+            <h3>العد التنازلي</h3>
+            <p>عرض الوقت المتبقي للصلاة أو الإقامة التالية بأرقام ثابتة وواضحة.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">🔊</div>
             <h3>الأذان والتنبيه</h3>
-            <p>اختيار ملفات أذان ومنبه بصيغة MP3 مع الاحتفاظ بالملفات الأصلية.</p>
+            <p>اختيار ملفات MP3 للأذان والمنبه مع إمكانية العودة إلى الملفات الأصلية.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">▦</div>
             <h3>ملف مواقيت CSV</h3>
-            <p>تحميل مواقيت خاصة بالمدينة من ملف CSV مطابق للنموذج المعتمد.</p>
+            <p>تحميل ملف مواقيت خاص بالمدينة وفق نموذج الأعمدة المعتمد.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">▣</div>
             <h3>صور أذكار PNG</h3>
-            <p>صورة مستقلة للوضع العمودي وأخرى للوضع الأفقي مع الاستعادة الأصلية.</p>
+            <p>صورة مستقلة للوضع العمودي وأخرى للوضع الأفقي.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">°C</div>
             <h3>درجة الحرارة</h3>
-            <p>عرض درجة الحرارة المحلية بعد منح إذن الموقع عند الطلب.</p>
+            <p>عرض درجة الحرارة المحلية عند منح إذن الموقع.</p>
           </article>
 
           <article class="feature-card reveal">
@@ -148,7 +153,7 @@
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">⚙</div>
             <h3>إعدادات مرنة</h3>
-            <p>اسم الجامع ولون الواجهة والتاريخ الهجري والمنبه وإطفاء الشاشة والمزيد.</p>
+            <p>اسم الجامع والألوان والتاريخ الهجري والمنبه وإطفاء الشاشة والمزيد.</p>
           </article>
         </div>
       </div>
@@ -158,14 +163,14 @@
       <div class="container">
         <header class="section-header reveal">
           <p class="section-kicker">صور التطبيق</p>
-          <h2 class="section-title">تصميم متناسق مع هوية المسجد</h2>
-          <p class="section-description">اضغط على الصورة لعرضها بحجم أكبر.</p>
+          <h2 class="section-title">واجهة متناسقة في الاتجاهين</h2>
+          <p class="section-description">اضغط على أي صورة لعرضها بالحجم الكامل.</p>
         </header>
 
-        <div class="gallery-grid">
-          <figure class="gallery-card is-portrait reveal">
-            <span class="gallery-label">الوضع العمودي</span>
-            <button class="gallery-trigger" type="button"
+        <div class="showcase-grid">
+          <figure class="showcase-card portrait reveal">
+            <span class="showcase-label">الوضع العمودي</span>
+            <button class="image-zoom" type="button"
                     data-image="assets/images/app-portrait.webp"
                     data-alt="واجهة التطبيق العمودية بالحجم الكامل"
                     data-caption="واجهة عمودية مناسبة للشاشات الرأسية">
@@ -174,9 +179,9 @@
             </button>
           </figure>
 
-          <figure class="gallery-card reveal">
-            <span class="gallery-label">الوضع الأفقي</span>
-            <button class="gallery-trigger" type="button"
+          <figure class="showcase-card reveal">
+            <span class="showcase-label">الوضع الأفقي</span>
+            <button class="image-zoom" type="button"
                     data-image="assets/images/app-landscape.webp"
                     data-alt="واجهة التطبيق الأفقية بالحجم الكامل"
                     data-caption="واجهة أفقية تستفيد من عرض الشاشة بالكامل">
@@ -189,12 +194,12 @@
     </section>
 
     <section id="download" class="section section-soft">
-      <div class="container download-layout">
+      <div class="container download-grid">
         <article class="download-card reveal">
           <p class="section-kicker">التنزيل الرسمي</p>
           <h2>حمّل تطبيق Android بصيغة APK</h2>
           <p>
-            حمّل النسخة الرسمية من GitHub Releases، وتجنب النسخ المعدلة من المصادر غير الموثوقة.
+            نزّل النسخة الرسمية من GitHub Releases، وتجنب النسخ المعدلة من المصادر غير الموثوقة.
           </p>
 
           <dl class="download-meta">
@@ -220,8 +225,7 @@
             </div>
           </dl>
 
-          <a class="button button-primary js-apk-download"
-             href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
+          <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
             تنزيل التطبيق الآن
           </a>
         </article>
@@ -229,12 +233,14 @@
         <article id="install" class="install-card reveal">
           <p class="section-kicker">طريقة التثبيت</p>
           <h2>أربع خطوات بسيطة</h2>
+
           <ol class="install-steps">
             <li>اضغط زر التنزيل وانتظر اكتمال ملف APK.</li>
             <li>افتح الملف من هاتف أو جهاز Android.</li>
             <li>اسمح بالتثبيت من هذا المصدر عند طلب النظام.</li>
             <li>ثبّت التطبيق واضبط اسم الجامع والمواقيت من الإعدادات.</li>
           </ol>
+
           <p>قد يختلف اسم خيار السماح بالتثبيت بحسب إصدار Android والشركة المصنّعة.</p>
         </article>
       </div>
@@ -279,14 +285,15 @@
     <section class="cta">
       <div class="container">
         <div class="cta-panel reveal">
-          <img class="cta-logo" src="assets/images/firas-logo.webp" alt="">
-          <h2>واجهة واضحة، فاخرة، وسهلة الإعداد</h2>
-          <p>
-            ثبّت التطبيق على شاشة Android أو جهاز متوافق واضبط مواقيت مسجدك خلال دقائق.
-          </p>
-          <a class="button button-primary js-apk-download"
-             href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
-            تنزيل ملف APK
+          <img class="cta-logo" src="assets/images/logo-fm.webp" alt="شعار فراس أسود">
+
+          <div class="cta-copy">
+            <h2>واجهة مسجد واضحة وسهلة الإعداد</h2>
+            <p>ثبّت التطبيق على شاشة Android واضبط مواقيت مسجدك خلال دقائق.</p>
+          </div>
+
+          <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
+            تنزيل APK
           </a>
         </div>
       </div>
@@ -312,12 +319,12 @@
     </div>
   </footer>
 
-  <dialog id="galleryDialog" class="gallery-dialog"
-          aria-labelledby="galleryDialogCaption">
-    <img id="galleryDialogImage" src="" alt="">
-    <div class="dialog-footer">
-      <p id="galleryDialogCaption"></p>
-      <button id="galleryClose" class="dialog-close" type="button">إغلاق</button>
+  <dialog id="imageModal" class="image-modal"
+          aria-labelledby="imageModalCaption">
+    <img id="imageModalPicture" src="" alt="">
+    <div class="modal-footer">
+      <p id="imageModalCaption"></p>
+      <button id="imageModalClose" class="modal-close" type="button">إغلاق</button>
     </div>
   </dialog>
 
