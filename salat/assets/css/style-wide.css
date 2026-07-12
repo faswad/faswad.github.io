@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap");
 
 :root {
   --bg: #050c16;
@@ -18,7 +18,7 @@
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 14px;
-  --container: 1180px;
+  --container: 1540px;
 }
 
 *,
@@ -195,18 +195,19 @@ button {
 
 /* Hero */
 .hero {
-  padding: 74px 0 62px;
+  padding: 66px 0 72px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(360px, 0.72fr) minmax(720px, 1.45fr);
   align-items: center;
-  gap: clamp(42px, 6vw, 84px);
+  gap: clamp(40px, 4vw, 72px);
 }
 
 .hero-copy {
-  max-width: 610px;
+  max-width: 650px;
+  justify-self: end;
 }
 
 .hero-badge {
@@ -233,11 +234,12 @@ button {
 
 .hero h1 {
   margin: 18px 0 0;
-  max-width: 590px;
-  font-size: clamp(2.25rem, 4.4vw, 4rem);
+  max-width: 650px;
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif;
+  font-size: clamp(2.1rem, 3.4vw, 3.65rem);
   font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.28;
+  letter-spacing: -0.02em;
+  line-height: 1.45;
 }
 
 .hero h1 span {
@@ -315,7 +317,7 @@ button {
 
 .hero-visual {
   position: relative;
-  min-height: 510px;
+  min-height: 620px;
   display: grid;
   place-items: center;
 }
@@ -332,7 +334,8 @@ button {
 
 .product-frame {
   position: relative;
-  width: min(100%, 665px);
+  width: 100%;
+  max-width: 980px;
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: 22px;
@@ -399,9 +402,10 @@ button {
 
 .section-title {
   margin: 0;
-  font-size: clamp(1.65rem, 3vw, 2.5rem);
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.35rem);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.55;
 }
 
 .section-description {
@@ -412,8 +416,8 @@ button {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .feature-card {
@@ -458,9 +462,9 @@ button {
 /* Gallery */
 .showcase-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+  grid-template-columns: minmax(360px, 0.52fr) minmax(780px, 1.48fr);
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .showcase-card {
@@ -514,8 +518,8 @@ button {
 /* Download */
 .download-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
-  gap: 22px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(380px, 0.88fr);
+  gap: 26px;
 }
 
 .download-card,
@@ -1000,5 +1004,52 @@ button {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+
+/* Wide desktop presentation */
+@media (min-width: 1280px) {
+  .container {
+    width: min(calc(100% - 72px), var(--container));
+  }
+
+  .header-inner {
+    min-height: 76px;
+  }
+
+  .hero-description {
+    max-width: 640px;
+  }
+
+  .product-frame img {
+    min-height: 500px;
+    object-fit: cover;
+  }
+
+  .section {
+    padding: 82px 0;
+  }
+
+  .feature-card {
+    min-height: 205px;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --container: 1640px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(390px, 0.68fr) minmax(840px, 1.52fr);
+  }
+
+  .product-frame {
+    max-width: 1080px;
+  }
+
+  .product-frame img {
+    min-height: 560px;
   }
 }
