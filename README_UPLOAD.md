@@ -1,41 +1,36 @@
-# Correct final structure for faswad.github.io
+# Updated personal and Salat websites
 
-This package contains two separate websites:
+This package contains two different `index.html` files in the correct locations:
 
-1. Personal website:
-   https://faswad.github.io/
+- `index.html` — personal website:
+  https://faswad.github.io/
 
-2. Salat application website:
-   https://faswad.github.io/salat/
+- `salat/index.html` — Salat application website:
+  https://faswad.github.io/salat/
 
-The personal website does NOT contain an APK download button.
+Both websites now use:
+
+- Email: faswad@uomosul.edu.iq
+- WhatsApp username: @FirasAswad
+- WhatsApp link: https://wa.me/FirasAswad
+
+The personal homepage does not contain a direct APK download.
 It only links visitors to the Salat website.
 
-The APK download appears only inside:
-https://faswad.github.io/salat/
+The APK download remains inside `salat/index.html`.
 
-## Required repository structure
+## Upload
 
-index.html                 Personal homepage
-assets/                    Personal website assets
-salat/index.html           Salat application homepage
-salat/assets/              Salat application assets
-
-## Upload using GitHub Desktop
-
-1. Extract `faswad_personal_and_salat_separated.zip`.
-2. Open the local folder cloned from `faswad/faswad.github.io`.
-3. Delete the old website files and folders, but do not delete the hidden `.git` folder.
-4. Copy every extracted item into the repository folder.
-5. Confirm that `salat/index.html` exists.
-6. Commit with:
-   Separate personal website and Salat application
-7. Click `Push origin`.
-8. Wait for the GitHub Pages deployment.
-9. Test:
-   https://faswad.github.io/
-   https://faswad.github.io/salat/
-
-Do not upload the personal `index.html` inside the `salat` folder.
-Do not create a second nested `salat/salat` folder.
-The CV PDF files are not included.
+1. Extract `faswad_both_sites_updated_contact.zip`.
+2. Open the local folder for `faswad/faswad.github.io`.
+3. Replace the existing files with the extracted files.
+4. Do not delete the hidden `.git` folder.
+5. Confirm:
+   - `index.html`
+   - `salat/index.html`
+6. Commit:
+   `Update contact details on both websites`
+7. Push origin.
+8. Test:
+   - https://faswad.github.io/
+   - https://faswad.github.io/salat/
