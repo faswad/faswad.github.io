@@ -1,13 +1,18 @@
-CORRECT WEBSITE STRUCTURE
+CORRECT STRUCTURE
 
-ROOT PERSONAL WEBSITE:
-index.html
-assets/
+faswad.github.io/
+├── index.html                  Personal website
+├── assets/                     Personal website files
+├── salat/
+│   ├── index.html              Salat website
+│   ├── terms.html
+│   ├── privacy.html
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       ├── images/
+│       └── downloads/
+└── .nojekyll
 
-SALAT APPLICATION WEBSITE:
-salat/index.html
-salat/assets/
-
-DO NOT place the personal index.html inside the salat folder.
-DO NOT place the salat folder inside another salat folder.
-DO NOT upload CV PDF files.
+The personal website only links to /salat/.
+The APK download is only inside /salat/.
