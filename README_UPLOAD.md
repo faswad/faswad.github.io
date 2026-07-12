@@ -1,26 +1,24 @@
-# Wide Firas Salat website with downloadable CSV model
+# Personal website for faswad.github.io
 
-This package adds a full CSV section to:
+This package replaces the ROOT personal website and keeps the existing `salat` application at:
 
-- https://faswad.github.io/salat/
+`https://faswad.github.io/salat/`
 
-The sample file is available at:
+## Root-only replacement
 
-- https://faswad.github.io/salat/assets/downloads/mosul_prayer_times.csv
-
-## Upload with GitHub Desktop
-
-1. Extract `salat_wide_with_csv_replacement.zip`.
-2. Open the cloned `faswad.github.io` repository.
-3. Delete the old local `salat` folder.
-4. Copy the new extracted `salat` folder into the repository.
-5. Commit: `Add CSV prayer-times template`.
-6. Click `Push origin`.
+1. Extract `faswad_personal_root_replacement.zip`.
+2. Open your cloned `faswad.github.io` repository.
+3. Keep the existing `salat` folder.
+4. Replace the root `index.html`, root `assets` folder, `404.html`, `.nojekyll`, `site.webmanifest`, `robots.txt`, and `sitemap.xml` with the files from this package.
+5. Commit: `Add professional personal website`
+6. Push origin.
 7. Wait for GitHub Pages deployment.
-8. Open https://faswad.github.io/salat/ and perform a hard refresh.
+8. Open `https://faswad.github.io/`.
 
-The CSV is stored inside:
+## Complete repository package
 
-`salat/assets/downloads/mosul_prayer_times.csv`
+The complete ZIP also includes the current Salat website with CSV template support.
 
-Do not remove this file unless you also remove or change its links in `salat/index.html`.
+## Public contact information
+
+The website includes the email and professional social links from the supplied CVs. The phone number was intentionally not displayed on the public homepage; it remains inside the downloadable CV files.
