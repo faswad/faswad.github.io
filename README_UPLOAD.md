@@ -1,48 +1,38 @@
-# Mobile and desktop optimized website
+# Complete mobile and desktop responsive website
 
-This package keeps both websites responsive:
+This package applies responsive design to both websites:
 
 - Personal website: https://faswad.github.io/
 - Salat application website: https://faswad.github.io/salat/
 
-## Mobile improvements
+## Personal website
 
-### Personal website
+- Shorter and wider 4:3 profile photo
+- Full face remains visible on desktop and phones
+- Responsive navigation
+- Mobile-sized banner and quotation
+- Stacked biography, research, expertise, education, project, and contact sections
+- Touch-friendly buttons and links
 
-- Responsive navigation menu with large touch targets
-- Mobile-sized academic banner and quotation
-- Smaller, centered portrait on phones
-- Readable biography typography
-- Stacked update, publication, expertise, education, project, and contact sections
-- Full-width project and contact buttons
-- Improved layout at 360 px, 390 px, 430 px, tablet, and desktop widths
-- Menu closes after selection, outside click, Escape, or desktop resizing
+## Salat website
 
-### Salat website
-
-- Responsive Arabic header and navigation
-- Mobile-sized title and description
-- Full-width download and help buttons
-- Better phone layout for screenshots, features, installation, FAQ, CSV, and device-help sections
-- Horizontally scrollable CSV preview on narrow screens
-- Larger touch targets
-- Improved image modal sizing on phones
-- Menu closes after selection, outside click, Escape, or desktop resizing
+- Responsive Arabic navigation
+- Phone-friendly title, download buttons, screenshots, features, installation instructions, device-help section, FAQ, and CSV table
+- The CSV preview scrolls horizontally on narrow screens
+- Launch on Boot APK remains hosted locally inside the website
+- APK download remains only on the Salat website
 
 ## Upload
 
-1. Extract `FASWAD_MOBILE_AND_DESKTOP_OPTIMIZED.zip`.
-2. Open the local `faswad.github.io` repository.
+1. Extract `FASWAD_COMPLETE_MOBILE_WIDE_PHOTO.zip`.
+2. Open your local `faswad.github.io` repository.
 3. Keep the hidden `.git` folder.
-4. Replace the current website files with the extracted files.
-5. Confirm:
-   - `index.html`
-   - `salat/index.html`
-6. Commit:
-   `Optimize personal and Salat websites for phones`
-7. Push origin.
-8. Test on a phone:
+4. Replace the current files with the extracted files.
+5. Commit:
+   `Improve phone layout and profile photo`
+6. Push origin.
+7. Test both:
    - https://faswad.github.io/
    - https://faswad.github.io/salat/
 
-Keep the previous good ZIP as a rollback backup.
+Test with the phone held vertically and horizontally.
