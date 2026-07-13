@@ -17,6 +17,25 @@
         menuButton.setAttribute("aria-expanded", "false");
       });
     });
+
+    const closeMenu = () => {
+      navigation.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+    };
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!navigation.classList.contains("is-open")) return;
+      if (navigation.contains(event.target) || menuButton.contains(event.target)) return;
+      closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 980) closeMenu();
+    });
   }
 
   document.querySelectorAll("[data-year]").forEach((node) => {
