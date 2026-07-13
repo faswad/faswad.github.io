@@ -1,47 +1,44 @@
-# Academic professional website version
+# Professional Knowledge Horizon version
 
-This package preserves the two separate GitHub Pages websites:
+This package contains:
 
 - Personal website: https://faswad.github.io/
-- Salat application: https://faswad.github.io/salat/
+- Salat website: https://faswad.github.io/salat/
 
-## Personal-site redesign
+## Personal website changes
 
-The personal homepage now uses a clean academic style:
+- Smaller profile photo
+- New original “Knowledge Horizon” background
+- Updated quotation:
+  “Learning is infinite, for above every seeker of knowledge,
+  there is always a higher wisdom.”
+- More balanced academic layout
 
-- White navigation and spacious layout
-- Original data/network science banner
-- Professional grayscale portrait
-- Research and publication sections
-- Education, expertise, and technical background
-- Recent updates
-- Featured Salat project
-- No CV files and no direct APK download on the personal homepage
+## Salat website changes
 
-## Salat compatibility update
-
-The Salat website now explains that the application is designed for:
-
-- Android phones
-- Android tablets
-- Android televisions
-- Android TV Box devices
-- Other attached Android devices that permit APK installation
+- Main title changed to:
+  شاشة مواقيت الصلاة للمساجد والهواتف
+- Added a professional “مساعدة في إعداد الجهاز” section
+- Added instructions for opening APK files on Android TV using File Commander
+- Added guidance for automatic startup after power restoration
+- Added links to Launch on Boot from Google Play and an APK from F-Droid
+- Added related FAQ entries
+- Clarified that third-party utility applications are independent from Firas Salat
 
 ## Upload
 
-1. Extract `FASWAD_ACADEMIC_PROFESSIONAL_VERSION.zip`.
+1. Extract `FASWAD_PROFESSIONAL_KNOWLEDGE_HORIZON.zip`.
 2. Open the local `faswad.github.io` repository.
 3. Keep the hidden `.git` folder.
-4. Replace the current website files with the extracted files.
-5. Confirm both files exist:
+4. Replace the website files with the extracted files.
+5. Confirm:
    - `index.html`
    - `salat/index.html`
 6. Commit:
-   `Add academic professional design and Android device support`
+   `Refine personal design and add Android TV setup help`
 7. Push origin.
 8. Test:
    - https://faswad.github.io/
    - https://faswad.github.io/salat/
 
-Keep the previous final-good ZIP as a rollback copy until you approve this new design.
+Keep the previous final-good ZIP as a rollback copy.

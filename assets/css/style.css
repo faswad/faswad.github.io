@@ -124,18 +124,18 @@ button { font: inherit; }
   background: var(--ink);
 }
 
-.network-hero {
+.knowledge-hero {
   min-height: 330px;
   display: grid;
   place-items: center;
-  background: var(--navy) url("../images/network-banner.svg") center/cover no-repeat;
+  background: var(--navy) url("../images/knowledge-horizon.svg") center/cover no-repeat;
 }
-.network-overlay {
+.knowledge-overlay {
   width: min(calc(100% - 40px), 760px);
   padding: 38px 30px;
   text-align: center;
 }
-.network-overlay p {
+.knowledge-overlay p {
   margin: 0;
   color: white;
   font-family: Georgia, "Times New Roman", serif;
@@ -181,7 +181,7 @@ button { font: inherit; }
 
 .profile-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(260px, .65fr);
+  grid-template-columns: minmax(0, 1.72fr) minmax(210px, .48fr);
   gap: clamp(48px, 8vw, 95px);
   align-items: center;
 }
@@ -210,7 +210,7 @@ button { font: inherit; }
 .text-link:hover { text-decoration: underline; }
 
 .profile-card {
-  max-width: 310px;
+  max-width: 238px;
   justify-self: center;
 }
 .profile-card img {
@@ -574,8 +574,8 @@ button { font: inherit; }
   .identity { min-width: 0; }
   .identity strong { font-size: 1.05rem; }
   .identity span { font-size: .64rem; }
-  .network-hero { min-height: 260px; }
-  .network-overlay { padding: 25px 12px; }
+  .knowledge-hero { min-height: 260px; }
+  .knowledge-overlay { padding: 25px 12px; }
   .section { padding: 60px 0; }
   .profile-grid { gap: 38px; }
   .publication-item { grid-template-columns: 1fr; gap: 4px; }
@@ -601,4 +601,33 @@ button { font: inherit; }
     animation-duration: .01ms !important;
   }
   .reveal { opacity: 1; transform: none; }
+}
+
+.profile-card img {
+  box-shadow: 0 18px 38px rgba(18, 36, 48, .13);
+  outline: 7px solid #ffffff;
+  outline-offset: -7px;
+}
+
+.knowledge-hero {
+  position: relative;
+  overflow: hidden;
+}
+.knowledge-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(4,16,27,.32), transparent 35%, transparent 65%, rgba(4,16,27,.32)),
+    linear-gradient(to bottom, transparent 58%, rgba(255,255,255,.16));
+}
+.knowledge-overlay {
+  position: relative;
+  z-index: 1;
+}
+.knowledge-overlay p {
+  max-width: 900px;
+  margin-inline: auto;
+  letter-spacing: .005em;
 }

@@ -1243,3 +1243,99 @@ button {
   color: var(--gold-soft);
   font-weight: 700;
 }
+
+
+.device-help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.device-help-card {
+  position: relative;
+  padding: 27px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .035);
+  box-shadow: 0 15px 42px rgba(0, 0, 0, .12);
+}
+
+.device-help-card.device-help-note {
+  grid-column: 1 / -1;
+}
+
+.device-help-number {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 17px;
+  border: 1px solid rgba(222, 176, 75, .34);
+  border-radius: 12px;
+  color: var(--gold-soft);
+  background: rgba(222, 176, 75, .08);
+  font-weight: 800;
+}
+
+.device-help-card h3 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 1.12rem;
+}
+
+.device-help-card p {
+  margin: 0 0 17px;
+  color: var(--text-muted);
+  line-height: 1.9;
+}
+
+.compact-steps,
+.device-help-list {
+  margin: 0 0 20px;
+  padding-right: 22px;
+  color: var(--text-muted);
+}
+
+.compact-steps li,
+.device-help-list li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.tool-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.external-tool-link {
+  font-size: .86rem;
+}
+
+@media (max-width: 820px) {
+  .device-help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .device-help-card.device-help-note {
+    grid-column: auto;
+  }
+
+  .tool-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .tool-actions .button {
+    width: 100%;
+  }
+}
+
+.tool-download-note {
+  margin-top: 13px !important;
+  padding: 11px 13px;
+  border-right: 3px solid var(--gold);
+  border-radius: 8px;
+  background: rgba(222, 176, 75, .06);
+  font-size: .79rem;
+}
