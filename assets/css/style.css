@@ -1030,3 +1030,35 @@ section[id] {
     object-position: center 35%;
   }
 }
+
+
+/* ================================================================
+   EXACT 600 × 400 PROFILE IMAGE
+   ================================================================ */
+.profile-card {
+  width: min(100%, 330px);
+  max-width: 330px;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  object-position: center;
+  background: #eef1f2;
+}
+
+@media (max-width: 760px) {
+  .profile-card {
+    width: min(92vw, 320px);
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: min(94vw, 300px);
+    max-width: 300px;
+  }
+}

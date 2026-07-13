@@ -1,38 +1,38 @@
-# Complete mobile and desktop responsive website
+# Final phone redesign with 600 × 400 profile photo
 
-This package applies responsive design to both websites:
+This package updates both websites:
 
 - Personal website: https://faswad.github.io/
-- Salat application website: https://faswad.github.io/salat/
+- Salat website: https://faswad.github.io/salat/
 
 ## Personal website
 
-- Shorter and wider 4:3 profile photo
-- Full face remains visible on desktop and phones
-- Responsive navigation
-- Mobile-sized banner and quotation
-- Stacked biography, research, expertise, education, project, and contact sections
-- Touch-friendly buttons and links
+- Profile image is exactly 600 × 400 pixels
+- Full face and upper body are visible
+- The website displays the image in a 3:2 frame without cropping it again
 
-## Salat website
+## Salat website on phones
 
-- Responsive Arabic navigation
-- Phone-friendly title, download buttons, screenshots, features, installation instructions, device-help section, FAQ, and CSV table
-- The CSV preview scrolls horizontally on narrow screens
-- Launch on Boot APK remains hosted locally inside the website
-- APK download remains only on the Salat website
+- Compact mobile header
+- Cleaner hero card
+- Smaller title with clear visual hierarchy
+- Full-width download buttons
+- Horizontally scrollable information chips
+- Compact two-column feature cards
+- Swipeable screenshot gallery
+- Better spacing and typography
+- Cleaner download, installation, CSV, device-help, FAQ, and footer sections
+- Extra optimization for 390 px and smaller phones
 
 ## Upload
 
-1. Extract `FASWAD_COMPLETE_MOBILE_WIDE_PHOTO.zip`.
-2. Open your local `faswad.github.io` repository.
+1. Extract `FASWAD_FINAL_PHONE_REDESIGN_600x400.zip`.
+2. Open the local `faswad.github.io` repository.
 3. Keep the hidden `.git` folder.
 4. Replace the current files with the extracted files.
 5. Commit:
-   `Improve phone layout and profile photo`
+   `Redesign Salat mobile page and set profile photo to 600x400`
 6. Push origin.
-7. Test both:
+7. Test:
    - https://faswad.github.io/
    - https://faswad.github.io/salat/
-
-Test with the phone held vertically and horizontally.
