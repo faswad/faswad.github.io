@@ -2,6 +2,6 @@ window.APP_CONFIG = Object.freeze({
   version: "1.0.0",
   apkUrl: "https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk",
   apkFileName: "firas-prayer-display.apk",
-  apkSize: "61.3 MB",
-  sha256: "f313757ab96c3212bcb657098163428c8b9d346c68383c44486521ed53aed424"
+  apkSize: "61.1 MB",
+  sha256: "04910759d8f8fe5846f5a1c7979c106bbb643197dabb5a9d974dfa79386af45e"
 });
