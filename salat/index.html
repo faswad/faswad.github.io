@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/css/style-wide.css?v=10">
+  <link rel="stylesheet" href="assets/css/style-wide.css?v=11">
   <title>شاشة مواقيت الصلاة للمساجد والهواتف | تنزيل APK</title>
 </head>
 <body>
@@ -103,6 +103,25 @@
         </div>
       </div>
     </section>
+
+
+    <aside class="mosul-default-note" aria-label="ملاحظة مهمة عن مواقيت الصلاة الافتراضية">
+      <div class="container">
+        <div class="mosul-note-inner reveal">
+          <div class="mosul-note-icon" aria-hidden="true">!</div>
+          <div>
+            <h2>ملاحظة مهمة قبل استخدام التطبيق</h2>
+            <p>
+              عند تثبيت التطبيق لأول مرة تكون <strong>مواقيت مدينة الموصل</strong>
+              مضبوطة افتراضيًا. لاستخدام التطبيق في مدينة أخرى، جهّز ملف
+              <strong>CSV</strong> يحتوي على المواقيت الصحيحة لمدينتك، ثم ارفعه
+              من إعدادات التطبيق. يُنصح بمراجعة جميع المواقيت قبل اعتمادها في المسجد.
+            </p>
+            <a href="#csv-template">الانتقال إلى نموذج ملف CSV</a>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <section id="features" class="section section-soft">
       <div class="container">
@@ -215,8 +234,9 @@
           <p class="section-kicker">نموذج ملف مواقيت الصلاة</p>
           <h2 class="section-title">حمّل ملف CSV جاهزًا أو استخدمه كنموذج</h2>
           <p class="section-description">
-            الملف المرفق يحتوي على مواقيت مدينة الموصل لمدة سنة كاملة، ويمكن استخدامه مباشرةً
-            أو نسخ بنيته لإنشاء ملف خاص بمدينة أخرى بعد مراجعة المواقيت.
+            التطبيق يأتي بمواقيت مدينة الموصل افتراضيًا. الملف المرفق يحتوي على مواقيت
+            الموصل لمدة سنة كاملة، ويمكن استخدام بنيته لإنشاء ملف خاص بمدينة أخرى،
+            ثم رفع الملف من إعدادات التطبيق بعد مراجعة المواقيت بدقة.
           </p>
         </header>
 
@@ -284,6 +304,11 @@
           <h2>حمّل تطبيق Android بصيغة APK</h2>
           <p>
             نزّل النسخة الرسمية من GitHub Releases، وتجنب النسخ المعدلة من المصادر غير الموثوقة.
+          </p>
+
+          <p class="download-city-note">
+            <strong>الإعداد الافتراضي:</strong>
+            مواقيت مدينة الموصل. يمكن تغييرها لأي مدينة برفع ملف CSV من إعدادات التطبيق.
           </p>
 
           <dl class="download-meta">
@@ -571,6 +596,6 @@
   </dialog>
 
   <script src="assets/js/config.js"></script>
-  <script src="assets/js/main-wide.js?v=10"></script>
+  <script src="assets/js/main-wide.js?v=11"></script>
 </body>
 </html>

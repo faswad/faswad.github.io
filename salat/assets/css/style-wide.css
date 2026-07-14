@@ -2248,3 +2248,612 @@ section[id] {
     flex-basis: 65vw;
   }
 }
+
+
+/* ================================================================
+   COMPACT MOBILE POLISH
+   Smaller scale, strict viewport containment, and no side overflow.
+   ================================================================ */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+main,
+section,
+header,
+footer,
+aside,
+.container,
+.hero-grid,
+.feature-grid,
+.showcase-grid,
+.csv-layout,
+.download-grid,
+.device-help-grid,
+.cta-panel {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.mosul-default-note {
+  padding: 0 0 24px;
+}
+
+.mosul-note-inner {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 18px 20px;
+  border: 1px solid rgba(229, 184, 63, .36);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(229,184,63,.11), rgba(10,23,40,.96));
+  box-shadow: 0 16px 38px rgba(0,0,0,.18);
+}
+
+.mosul-note-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #231a05;
+  background: var(--gold-soft);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.mosul-note-inner h2 {
+  margin: 0 0 5px;
+  color: var(--gold-soft);
+  font-family: "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.mosul-note-inner p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: .86rem;
+  line-height: 1.85;
+}
+
+.mosul-note-inner a {
+  display: inline-block;
+  margin-top: 7px;
+  color: var(--gold-soft);
+  font-size: .79rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mosul-note-inner a:hover {
+  text-decoration: underline;
+}
+
+.download-city-note {
+  margin: 13px 0 18px !important;
+  padding: 10px 12px;
+  border-right: 3px solid var(--gold);
+  border-radius: 8px;
+  color: var(--text-soft) !important;
+  background: rgba(229,184,63,.07);
+  font-size: .80rem !important;
+  line-height: 1.8 !important;
+}
+
+.download-city-note strong {
+  color: var(--gold-soft);
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .container,
+  .hero .container {
+    width: min(calc(100% - 20px), 520px);
+    padding-inline: 0;
+  }
+
+  .site-header .container {
+    width: calc(100% - 18px);
+  }
+
+  .header-inner {
+    min-height: 58px;
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .brand-title {
+    font-size: .72rem;
+  }
+
+  .brand-subtitle {
+    font-size: .55rem;
+  }
+
+  .menu-button {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .main-nav {
+    right: 9px;
+    left: 9px;
+    max-height: calc(100dvh - 76px);
+    overflow-y: auto;
+  }
+
+  .main-nav a {
+    min-height: 40px;
+    padding: 8px 11px;
+    font-size: .78rem;
+  }
+
+  .hero {
+    padding: 10px 0 25px;
+  }
+
+  .hero-grid {
+    gap: 16px;
+    padding: 18px 12px 13px;
+    border-radius: 18px;
+  }
+
+  .hero-badge {
+    padding: 4px 8px;
+    font-size: .62rem;
+  }
+
+  .hero h1 {
+    margin-top: 9px;
+    font-size: clamp(1.47rem, 7.5vw, 1.88rem);
+    line-height: 1.38;
+  }
+
+  .hero h1 span {
+    margin-top: 1px;
+    font-size: .55em;
+  }
+
+  .hero-shortline {
+    margin-top: 3px;
+    font-size: .69rem;
+    line-height: 1.65;
+  }
+
+  .hero-description {
+    margin-top: 10px;
+    font-size: .76rem;
+    line-height: 1.72;
+  }
+
+  .hero-actions {
+    gap: 7px;
+    margin-top: 14px;
+  }
+
+  .hero-actions .button,
+  .button {
+    min-height: 42px;
+    padding: 8px 13px;
+    border-radius: 10px;
+    font-size: .78rem;
+  }
+
+  .hero-meta {
+    gap: 6px;
+    margin-top: 11px;
+  }
+
+  .hero-meta span {
+    min-height: 29px;
+    padding: 4px 8px;
+    font-size: .61rem;
+  }
+
+  .product-frame {
+    padding: 3px;
+    border-radius: 11px;
+  }
+
+  .product-frame img {
+    border-radius: 8px;
+  }
+
+  .mosul-default-note {
+    padding: 0 0 18px;
+  }
+
+  .mosul-note-inner {
+    grid-template-columns: 34px minmax(0,1fr);
+    gap: 10px;
+    padding: 13px 12px;
+    border-radius: 13px;
+  }
+
+  .mosul-note-icon {
+    width: 34px;
+    height: 34px;
+    font-size: .94rem;
+  }
+
+  .mosul-note-inner h2 {
+    margin-bottom: 3px;
+    font-size: .82rem;
+  }
+
+  .mosul-note-inner p {
+    font-size: .72rem;
+    line-height: 1.72;
+  }
+
+  .mosul-note-inner a {
+    margin-top: 5px;
+    font-size: .69rem;
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+
+  .section-header {
+    margin-bottom: 17px;
+  }
+
+  .section-kicker {
+    font-size: .64rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.12rem, 5.7vw, 1.43rem);
+    line-height: 1.45;
+  }
+
+  .section-description {
+    margin-top: 5px;
+    font-size: .73rem;
+    line-height: 1.68;
+  }
+
+  .feature-grid {
+    gap: 7px;
+  }
+
+  .feature-card {
+    min-height: 125px;
+    padding: 11px 9px;
+    border-radius: 10px;
+  }
+
+  .feature-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    font-size: .82rem;
+  }
+
+  .feature-card h3 {
+    margin-bottom: 3px;
+    font-size: .71rem;
+    line-height: 1.45;
+  }
+
+  .feature-card p {
+    font-size: .61rem;
+    line-height: 1.52;
+  }
+
+  .showcase-grid {
+    width: 100%;
+    gap: 9px;
+    margin-inline: 0;
+    padding: 1px 0 8px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .showcase-card,
+  .showcase-card.portrait {
+    flex-basis: min(78vw, 360px);
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 11px;
+  }
+
+  .showcase-card.portrait {
+    flex-basis: min(55vw, 235px);
+  }
+
+  .showcase-label {
+    top: 8px;
+    right: 8px;
+    padding: 4px 7px;
+    font-size: .57rem;
+  }
+
+  .download-grid,
+  .csv-layout,
+  .device-help-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+    width: 100%;
+  }
+
+  .download-grid > *,
+  .csv-layout > *,
+  .device-help-grid > * {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .download-card,
+  .install-card,
+  .csv-info-card,
+  .csv-preview-card,
+  .device-help-card {
+    padding: 14px 12px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  }
+
+  .download-card h2,
+  .install-card h2 {
+    font-size: 1.03rem;
+    line-height: 1.43;
+  }
+
+  .download-card > p,
+  .install-card > p,
+  .csv-info-card p,
+  .device-help-card p {
+    font-size: .70rem;
+    line-height: 1.70;
+  }
+
+  .download-city-note {
+    margin: 9px 0 12px !important;
+    padding: 8px 9px;
+    font-size: .68rem !important;
+  }
+
+  .download-meta {
+    margin-block: 12px;
+  }
+
+  .meta-row {
+    padding: 7px 0;
+  }
+
+  .meta-row dt,
+  .meta-row dd {
+    font-size: .66rem;
+  }
+
+  .meta-row dd {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .install-steps {
+    margin-top: 12px;
+  }
+
+  .install-steps li {
+    min-height: 29px;
+    margin-bottom: 8px;
+    padding-right: 35px;
+    font-size: .69rem;
+    line-height: 1.65;
+  }
+
+  .install-steps li::before {
+    width: 25px;
+    height: 25px;
+    font-size: .66rem;
+  }
+
+  .csv-file-badge {
+    font-size: .62rem;
+  }
+
+  .csv-info-card h3,
+  .csv-preview-card h3 {
+    font-size: .86rem;
+  }
+
+  .csv-actions {
+    display: grid;
+    gap: 7px;
+  }
+
+  .csv-rules {
+    padding-right: 17px;
+    font-size: .67rem;
+    line-height: 1.65;
+  }
+
+  .csv-preview-heading {
+    gap: 8px;
+    margin-bottom: 9px;
+  }
+
+  .csv-preview-heading > span {
+    font-size: .58rem;
+  }
+
+  .csv-table-scroll {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    contain: inline-size;
+  }
+
+  .csv-table {
+    width: 620px;
+    min-width: 620px;
+    font-size: .61rem;
+  }
+
+  .csv-table th,
+  .csv-table td {
+    padding: 6px 7px;
+    white-space: nowrap;
+  }
+
+  .device-help-number {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: .67rem;
+  }
+
+  .device-help-card h3 {
+    font-size: .79rem;
+    line-height: 1.45;
+  }
+
+  .compact-steps,
+  .device-help-list {
+    margin-bottom: 13px;
+    padding-right: 16px;
+    font-size: .68rem;
+    line-height: 1.65;
+  }
+
+  .tool-download-note {
+    font-size: .65rem;
+  }
+
+  .faq-list details {
+    margin-bottom: 6px;
+    border-radius: 9px;
+  }
+
+  .faq-list summary {
+    min-height: 41px;
+    padding: 10px 11px;
+    font-size: .72rem;
+    line-height: 1.55;
+  }
+
+  .faq-list p {
+    padding: 0 11px 11px;
+    font-size: .68rem;
+    line-height: 1.70;
+  }
+
+  .cta {
+    padding: 32px 0 35px;
+  }
+
+  .cta-panel {
+    gap: 9px;
+    padding: 13px 12px;
+    border-radius: 12px;
+  }
+
+  .cta-logo {
+    width: 48px;
+  }
+
+  .cta-copy h2 {
+    font-size: .91rem;
+  }
+
+  .cta-copy p {
+    font-size: .67rem;
+  }
+
+  .site-footer {
+    padding: 19px 0;
+  }
+
+  .footer-inner {
+    gap: 9px;
+  }
+
+  .footer-brand {
+    font-size: .70rem;
+  }
+
+  .footer-note,
+  .footer-links a,
+  .footer-contact {
+    font-size: .62rem;
+  }
+
+  .image-modal {
+    width: calc(100vw - 16px);
+    max-width: calc(100vw - 16px);
+    padding: 4px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 13.5px;
+  }
+
+  .container,
+  .hero .container {
+    width: calc(100% - 14px);
+  }
+
+  .site-header .container {
+    width: calc(100% - 12px);
+  }
+
+  .hero-grid {
+    padding: 15px 10px 11px;
+  }
+
+  .hero h1 {
+    font-size: 1.38rem;
+  }
+
+  .feature-card {
+    min-height: 118px;
+    padding-inline: 8px;
+  }
+
+  .feature-card h3 {
+    font-size: .67rem;
+  }
+
+  .feature-card p {
+    font-size: .57rem;
+  }
+
+  .showcase-card,
+  .showcase-card.portrait {
+    flex-basis: 82vw;
+  }
+
+  .showcase-card.portrait {
+    flex-basis: 58vw;
+  }
+}
