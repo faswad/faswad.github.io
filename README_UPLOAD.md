@@ -1,49 +1,57 @@
-# Compact mobile Salat website with Mosul default notice
+# موقع الدكتور فراس أسود وتطبيق شاشة مواقيت الصلاة
 
-This package contains the complete personal and Salat websites.
+هذه الحزمة تحتوي الموقع الشخصي وصفحة تطبيق الصلاة بعد تحديثها للإصدار 2.5.11+58.
 
-## Salat mobile improvements
+## ما تم تحديثه
 
-- Smaller overall scale on phones
-- Reduced title, cards, text, spacing, and button sizes
-- Strict horizontal-overflow protection
-- Fixed-width containment for CSV, gallery, cards, and grids
-- Compact header and navigation
-- Cleaner layout on 360 px, 390 px, and larger phones
-- No empty strip or background area beside the page
+- إضافة ملف التطبيق الرسمي مباشرة داخل الموقع:
+  `salat/assets/downloads/firas-prayer-display.apk`
+- تحديث معلومات الإصدار والحجم وبصمة SHA-256.
+- إضافة قسم واضح للجديد في الإصدار 2.5.11.
+- إبراز عمل الأذان والتنبيهات في الخلفية وبعد إعادة تشغيل الهاتف.
+- إضافة تذكير وضع الهاتف على الصامت وشاشة الأذكار وشريط الأحاديث.
+- توضيح صيانة التخزين والتنظيف التلقائي كل 10 أيام.
+- تحديث تعليمات التثبيت والتحذير الطبيعي عند تثبيت APK خارج Google Play.
+- الإبقاء على ملاحظة أن مواقيت مدينة الموصل هي الإعداد الافتراضي.
+- تحسين وصف المشروع في الصفحة الشخصية.
 
-## New visible notice
+## بيانات ملف APK
 
-The page clearly explains in Arabic that:
+- اسم الملف: `firas-prayer-display.apk`
+- الحزمة: `com.firas.prayer_displayer`
+- الإصدار: `2.5.11`
+- رقم البناء: `58`
+- الحجم: `39.0 MB` تقريباً
+- SHA-256:
+  `e98046df229677bf907845f84d1230b634f5a0d1ca12768b517d3d37dd13c3b4`
+- التوقيع: APK Signature Scheme v2
 
-- The installed application uses Mosul prayer times by default
-- Users in other cities can prepare and upload their own CSV file
-- Prayer times should be checked before mosque use
+## الرفع إلى GitHub Pages
 
-The notice appears:
+1. استبدل ملفات المستودع بمحتويات مجلد `faswad.github.io`.
+2. لا تحذف مجلد `.git` من نسختك المحلية الحالية.
+3. نفّذ:
 
-1. Directly below the main hero section
-2. In the CSV section
-3. In the APK download card
+```bash
+git add .
+git commit -m "Update Salat app website to 2.5.11"
+git push origin main
+```
 
-## Upload
+4. اختبر:
 
-1. Extract `FASWAD_COMPACT_MOBILE_MOSUL_NOTE.zip`.
-2. Replace the current repository files.
-3. Keep the hidden `.git` folder.
-4. Commit:
-   `Make Salat mobile page compact and add Mosul CSV notice`
-5. Push origin.
-6. Test:
-   - https://faswad.github.io/
-   - https://faswad.github.io/salat/
+- `https://faswad.github.io/`
+- `https://faswad.github.io/salat/`
+- `https://faswad.github.io/salat/assets/downloads/firas-prayer-display.apk`
 
+## عند إصدار نسخة جديدة
 
-## New APK metadata
+استبدل ملف APK بنفس الاسم، ثم حدّث القيم داخل:
 
-The Salat page now displays:
+`salat/assets/js/config.js`
 
-- APK size: 61.1 MB
-- SHA-256: `04910759d8f8fe5846f5a1c7979c106bbb643197dabb5a9d974dfa79386af45e`
+وأنشئ بصمة جديدة:
 
-The actual APK must still be uploaded as a GitHub Release asset using the exact filename `firas-prayer-display.apk`.
+```bash
+shasum -a 256 salat/assets/downloads/firas-prayer-display.apk
+```

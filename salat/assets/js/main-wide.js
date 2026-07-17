@@ -46,6 +46,10 @@
     node.textContent = config.version || "1.0.0";
   });
 
+  $$("[data-build]").forEach((node) => {
+    node.textContent = config.buildNumber || "—";
+  });
+
   $$("[data-apk-size]").forEach((node) => {
     node.textContent = config.apkSize || "—";
   });
