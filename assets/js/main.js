@@ -42,42 +42,6 @@
     node.textContent = new Date().getFullYear();
   });
 
-  const privateForm = document.querySelector("#privateContactForm");
-  const privateStatus = document.querySelector("#privateContactStatus");
-  document.querySelectorAll("[data-contact-open]").forEach((button) => {
-    button.addEventListener("click", () => {
-      privateForm?.scrollIntoView({ behavior: "smooth", block: "center" });
-      window.setTimeout(() => privateForm?.querySelector("input")?.focus(), 450);
-    });
-  });
-
-  if (privateForm) {
-    privateForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const data = new FormData(privateForm);
-      const name = String(data.get("name") || "").trim();
-      const reply = String(data.get("reply") || "").trim();
-      const subjectText = String(data.get("subject") || "Website contact").trim();
-      const message = String(data.get("message") || "").trim();
-      if (!name || !reply || !subjectText || !message) {
-        if (privateStatus) privateStatus.textContent = "Please complete all required fields.";
-        return;
-      }
-      const target = atob(["ZmFz", "d2Fk", "QHVv", "bW9z", "dWwu", "ZWR1", "Lmlx"].join(""));
-      const subject = `[Website] ${subjectText}`;
-      const body = [
-        `Name: ${name}`,
-        `Reply email: ${reply}`,
-        "",
-        message,
-        "",
-        `Page: ${window.location.href}`
-      ].join("\n");
-      if (privateStatus) privateStatus.textContent = "Opening your email application…";
-      window.location.href = `mailto:${target}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
-  }
-
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

@@ -2,377 +2,690 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#06111b">
-  <meta name="color-scheme" content="dark">
-  <meta name="description" content="Salat_FM 2.6.5 تطبيق Android مجاني صُمم للمساجد أولاً لعرض مواقيت الصلاة والإقامة والأذان والتنبيهات والطقس وشريط الأحاديث، وطُوّر ليعمل أيضاً على الهواتف وشاشات Android.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050c16">
+  <meta name="description" content="تطبيق Android مجاني لمواقيت الصلاة والإقامة للمساجد والهواتف، مع الأذان والتنبيهات في الخلفية بعد إعادة التشغيل، العد التنازلي، شريط الأحاديث، الأذكار، الطقس، وملفات CSV.">
   <meta name="author" content="الدكتور فراس اسود العبادي">
-  <meta property="og:title" content="Salat_FM 2.6.5 | شاشة مواقيت الصلاة للمساجد">
-  <meta property="og:description" content="تطبيق مجاني صُمم للمساجد أولاً، ثم طُوّر ليعمل أيضاً على الهواتف والأجهزة اللوحية وشاشات Android.">
+  <meta property="og:title" content="شاشة مواقيت الصلاة للمساجد والهواتف">
+  <meta property="og:description" content="تطبيق مجاني ووقف خيري للمساجد والهواتف، مع الأذان في الخلفية ومواقيت الإقامة وشريط الأحاديث والأذكار.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://faswad.github.io/salat/">
   <meta property="og:image" content="https://faswad.github.io/salat/assets/images/social-preview.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://faswad.github.io/salat/">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="assets/images/app-landscape.webp" as="image" type="image/webp" fetchpriority="high">
-  <link rel="stylesheet" href="assets/css/style-wide.css?v=265-final">
-  <title>Salat_FM 2.6.5 | شاشة مواقيت الصلاة للمساجد</title>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Salat_FM",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "Android",
-    "softwareVersion": "2.6.5",
-    "datePublished": "2026-07-19",
-    "isAccessibleForFree": true,
-    "description": "تطبيق مجاني صُمم للمساجد أولاً لعرض مواقيت الصلاة والإقامة والأذان والتنبيهات والطقس، ويعمل أيضاً على الهواتف وشاشات Android.",
-    "downloadUrl": "https://faswad.github.io/salat/assets/downloads/firas-prayer-display.apk",
-    "author": {"@type": "Person", "name": "الدكتور فراس اسود العبادي"}
-  }
-  </script>
+  <link rel="stylesheet" href="assets/css/style-wide.css?v=13">
+  <title>شاشة مواقيت الصلاة للمساجد والهواتف | تنزيل APK</title>
 </head>
 <body>
   <a class="skip-link" href="#mainContent">انتقل إلى المحتوى الرئيسي</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="الصفحة الرئيسية لتطبيق Salat_FM">
-        <img src="assets/images/logo-fm.webp" alt="" width="48" height="48">
-        <span><strong>Salat_FM</strong><small>شاشة مواقيت للمساجد أولاً</small></span>
+      <a class="brand" href="./" aria-label="الصفحة الرئيسية">
+        <img class="brand-logo" src="assets/images/logo-fm.webp" alt="" width="44" height="44">
+        <span class="brand-copy">
+          <span class="brand-title">شاشة مواقيت الصلاة</span>
+          <span class="brand-subtitle">للمساجد والهواتف · Android</span>
+        </span>
       </a>
 
-      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="فتح قائمة التنقل">
-        <span></span><span></span><span></span>
+      <button id="menuButton" class="menu-button" type="button"
+              aria-expanded="false" aria-controls="mainNav"
+              aria-label="فتح قائمة التنقل">
+        <svg width="23" height="23" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"/>
+        </svg>
       </button>
 
-      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
-        <a href="#mosques">للمساجد</a>
+      <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#latest">الجديد</a>
         <a href="#features">المزايا</a>
-        <a href="#gallery">الصور</a>
+        <a href="#gallery">صور التطبيق</a>
+        <a href="#csv-template">نموذج CSV</a>
         <a href="#download">التنزيل</a>
         <a href="#install">التثبيت</a>
+        <a href="#device-help">إعداد الجهاز</a>
         <a href="#faq">الأسئلة</a>
-        <a href="#contact">التواصل</a>
-        <a class="nav-download js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">تنزيل التطبيق</a>
+        <a href="terms.html">الشروط</a>
       </nav>
     </div>
   </header>
 
   <main id="mainContent">
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="version-pill"><span aria-hidden="true"></span>الإصدار المعتمد <bdi>Salat_FM 2.6.5</bdi></div>
-          <h1 id="heroTitle">شاشة مواقيت متكاملة صُممت للمساجد أولاً</h1>
-          <p class="hero-lead">
-            تطبيق Android عربي ومجاني يعرض مواقيت الصلاة والإقامة والعدّ التنازلي
-            والأذان والطقس وشريط الأحاديث في واجهة واضحة مناسبة لشاشات المساجد.
-            ثم طُوّر ليعمل أيضاً على الهواتف والأجهزة اللوحية وشاشات Android.
+          <span class="hero-badge">الإصدار 2.6.5 · APK رسمي موقّع</span>
+
+          <h1>
+            شاشة مواقيت الصلاة
+            <span>للمساجد والهواتف</span>
+          </h1>
+
+          <p class="hero-shortline">
+            تطبيق Android واضح وسهل الإعداد للشاشات الصغيرة والكبيرة
           </p>
+
+          <p class="hero-description">
+            صُمّم التطبيق أولًا ليكون شاشة واضحة ومتكاملة للمساجد، ثم طُوّر ليعمل
+            بكفاءة على الهواتف والأجهزة اللوحية والتلفاز وAndroid TV Box. يعرض أوقات
+            الصلاة والإقامة والعدّ التنازلي والطقس وشريط الأحاديث، مع جدولة أسبوعية
+            متجددة للأذان والتنبيهات حتى بعد إغلاق التطبيق أو إعادة تشغيل الجهاز.
+          </p>
+
           <div class="hero-actions">
-            <a class="button button-primary button-large js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v10.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3ZM5 19h14v2H5v-2Z"/></svg>
-              تنزيل Salat_FM 2.6.5
+            <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3ZM5 19h14v2H5v-2Z"/>
+              </svg>
+              تنزيل ملف APK
             </a>
-            <a class="button button-secondary" href="#gallery">مشاهدة الواجهات</a>
+
+            <a class="button button-secondary" href="#gallery">عرض صور التطبيق</a>
           </div>
-          <div class="hero-points" aria-label="مزايا أساسية">
-            <span>مجاني للمساجد</span>
-            <span>واجهة أفقية وعمودية</span>
-            <span>مواقيت تعمل دون إنترنت</span>
-            <span>مناسب للأجهزة القديمة</span>
+
+          <div class="hero-meta" aria-label="معلومات سريعة">
+            <span>للمساجد أولًا</span>
+            <span>مجاني ووقف خيري</span>
+            <span>أذان وتنبيهات موثوقة</span>
+            <span>هاتف وتلفاز وAndroid TV Box</span>
+            <span>واجهتان عمودية وأفقية</span>
           </div>
         </div>
 
-        <div class="hero-showcase reveal" aria-label="معاينة الوضعين الأفقي والعمودي">
-          <div class="landscape-frame">
-            <div class="frame-top"><i></i><i></i><i></i><span>شاشة المسجد</span></div>
-            <img src="assets/images/app-landscape.webp" alt="واجهة Salat_FM الأفقية مع مواقيت الصلاة وشريط الأحاديث" width="1273" height="709" fetchpriority="high">
+        <div class="hero-visual reveal">
+          <div class="product-frame">
+            <img src="assets/images/app-landscape.webp"
+                 alt="واجهة التطبيق الأفقية لمواقيت الصلاة">
           </div>
-          <div class="phone-frame" aria-hidden="true">
-            <div class="phone-speaker"></div>
-            <img src="assets/images/app-portrait.webp" alt="" width="720" height="1480">
+
+          <div class="logo-float" aria-hidden="true">
+            <img src="assets/images/logo-fm.webp" alt="">
           </div>
-          <div class="showcase-badge badge-one"><strong>7 أيام</strong><span>جدولة تتجدد تلقائياً</span></div>
-          <div class="showcase-badge badge-two"><strong>شريط حي</strong><span>أحاديث وإعلانات اختيارية</span></div>
         </div>
       </div>
     </section>
 
-    <section class="mission-band" id="mosques">
-      <div class="container mission-grid">
-        <div class="mission-mark" aria-hidden="true">م</div>
-        <div>
-          <p class="eyebrow">المساجد هي الغاية الأساسية</p>
-          <h2>مشروع مجاني لتوفير شاشة صلاة عملية وواضحة في بيوت الله</h2>
-          <p>
-            بدأت فكرة <bdi>Salat_FM</bdi> من حاجة المساجد إلى شاشة سهلة الإعداد تعرض
-            المواقيت والإقامة والتنبيهات بوضوح ومن دون كلفة. لذلك يبقى التطبيق مجانياً
-            للمساجد، مع إمكانية تخصيص اسم الجامع والمواقيت والصور والأصوات والمحتوى.
-            دعم الهاتف جاء لاحقاً لتوسيع الفائدة، من دون تغيير هوية المشروع الأساسية.
-          </p>
-        </div>
-        <div class="mission-stat"><strong>مسجد أولاً</strong><span>هاتف وشاشات Android أيضاً</span></div>
-      </div>
-    </section>
 
-    <section class="section" id="features">
+    <aside class="mosul-default-note" aria-label="ملاحظة مهمة عن مواقيت الصلاة الافتراضية">
       <div class="container">
-        <header class="section-heading reveal">
-          <p class="eyebrow">مزايا الإصدار 2.6.5</p>
-          <h2>كل ما تحتاجه شاشة المسجد، في تطبيق واحد خفيف</h2>
-          <p>الوظائف الأساسية تعمل ببساطة، بينما تنشط الشبكة والخدمات فقط عند الحاجة.</p>
+        <div class="mosul-note-inner reveal">
+          <div class="mosul-note-icon" aria-hidden="true">!</div>
+          <div>
+            <h2>ملاحظة مهمة قبل استخدام التطبيق</h2>
+            <p>
+              عند تثبيت التطبيق لأول مرة تكون <strong>مواقيت مدينة الموصل</strong>
+              مضبوطة افتراضيًا. لاستخدام التطبيق في مدينة أخرى، جهّز ملف
+              <strong>CSV</strong> يحتوي على المواقيت الصحيحة لمدينتك، ثم ارفعه
+              من إعدادات التطبيق. يُنصح بمراجعة جميع المواقيت قبل اعتمادها في المسجد.
+            </p>
+            <a href="#csv-template">الانتقال إلى نموذج ملف CSV</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="latest" class="section latest-release-section">
+      <div class="container">
+        <div class="latest-release-panel reveal">
+          <div class="latest-release-copy">
+            <p class="section-kicker">الجديد في الإصدار 2.6.5</p>
+            <h2>تجربة متكاملة للمساجد مع دعم عملي للهواتف</h2>
+            <p>
+              تجمع هذه النسخة بين وضوح شاشة المسجد وسرعة الاستخدام على الهاتف، مع
+              أصوات مناسبة لحالة التطبيق، وجدولة أسبوعية متجددة، وطقس تلقائي أكثر اعتمادية.
+            </p>
+          </div>
+          <div class="latest-release-grid">
+            <article>
+              <strong>مصمم للمساجد أولًا</strong>
+              <span>واجهة أفقية واضحة من مسافة بعيدة، مع وضع مستقل للهواتف والشاشات العمودية.</span>
+            </article>
+            <article>
+              <strong>أذان مناسب لحالة التطبيق</strong>
+              <span>أذان كامل عند عمل التطبيق، وصوت قصير موثوق من Android عند إغلاقه بالكامل.</span>
+            </article>
+            <article>
+              <strong>أسبوع متجدد تلقائيًا</strong>
+              <span>تخزين وجدولة الأيام السبعة القادمة وإضافة يوم جديد تلقائيًا كل يوم.</span>
+            </article>
+            <article>
+              <strong>طقس تلقائي سريع</strong>
+              <span>يبدأ بعنوان IP ثم GPS عند الحاجة، ويستخدم الموصل كخيار احتياطي.</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-soft">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">مزايا التطبيق</p>
+          <h2 class="section-title">كل ما تحتاجه شاشة المسجد</h2>
+          <p class="section-description">
+            تصميم واضح من مسافة بعيدة، وإعدادات مرنة تناسب المساجد والشاشات المختلفة.
+          </p>
         </header>
 
-        <div class="feature-layout">
-          <article class="feature-highlight reveal">
-            <span class="feature-kicker">واجهة المسجد</span>
-            <h3>مواقيت الصلاة والإقامة والعدّ التنازلي في عرض واضح من مسافة بعيدة</h3>
-            <p>يدعم الوضع الأفقي للشاشات والتلفاز، والوضع العمودي للشاشات الرأسية، مع إبراز الصلاة الحالية والوقت المتبقي للأذان أو الإقامة.</p>
-            <ul class="mini-list">
-              <li>الفجر والشروق والظهر والعصر والمغرب والعشاء</li>
-              <li>أوقات الإقامة وصلاة الضحى</li>
-              <li>التاريخ الميلادي والهجري وحالة الطقس</li>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">☀</div>
+            <h3>مواقيت الصلاة والإقامة</h3>
+            <p>عرض الفجر والشروق والظهر والعصر والمغرب والعشاء، مع أوقات الإقامة وصلاة الضحى.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🔊</div>
+            <h3>أذان وتنبيهات في الخلفية</h3>
+            <p>يشغّل الأذان الكامل عند عمل التطبيق، ويستخدم أذانًا قصيرًا موثوقًا عند إغلاقه بالكامل، مع منبه ثابت في الحالتين.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⏱</div>
+            <h3>جدولة أسبوعية متجددة</h3>
+            <p>يحفظ الأيام السبعة القادمة ويضيف يومًا جديدًا تلقائيًا بعد انقضاء كل يوم.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">📵</div>
+            <h3>تذكير وضع الهاتف صامتًا</h3>
+            <p>تذكير مرئي في الدقيقة الأخيرة قبل الإقامة مع عداد ثوانٍ واضح.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">▣</div>
+            <h3>شاشة الأذكار</h3>
+            <p>عرض صور أذكار مخصصة للوضعين العمودي والأفقي لمدة افتراضية قدرها 15 دقيقة.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">▤</div>
+            <h3>شريط أحاديث وإعلانات</h3>
+            <p>شريط متحرك قابل للضبط يعرض الأحاديث النووية أو نصوصًا مخصصة مع التحكم بالسرعة والحجم.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">°C</div>
+            <h3>طقس تلقائي سريع</h3>
+            <p>يعتمد تلقائيًا على IP ثم GPS ثم مدينة الموصل، مع إمكان تحديد موقع ثابت من الإعدادات.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">▦</div>
+            <h3>ملف مواقيت CSV</h3>
+            <p>استيراد ملف سنوي خاص بأي مدينة، مع مواقيت مدينة الموصل مضبوطة افتراضيًا.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">♪</div>
+            <h3>ملفات صوت وصور مخصصة</h3>
+            <p>اختيار MP3 للأذان والمنبه وصور PNG للأذكار، مع الرجوع إلى الملفات الأصلية.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">↔</div>
+            <h3>واجهتان عمودية وأفقية</h3>
+            <p>تصميمان متكاملان للهاتف والشاشات الرأسية والتلفاز، مع خيارات تدوير مرنة.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⏻</div>
+            <h3>وضع شاشة المسجد</h3>
+            <p>تشغيل مخصص لأجهزة العرض وAndroid TV مع دعم الاستئناف بعد تشغيل الجهاز بحسب نظامه.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⌫</div>
+            <h3>إعدادات خفيفة وواضحة</h3>
+            <p>تحكم مباشر في وضع الشاشة والشريط والألوان والأصوات والتاريخ الهجري من واجهة منظمة وسريعة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">صور التطبيق</p>
+          <h2 class="section-title">واجهة متناسقة في الاتجاهين</h2>
+          <p class="section-description">مرّر الصور على الهاتف، واضغط على أي صورة لعرضها بالحجم الكامل.</p>
+        </header>
+
+        <div class="showcase-grid">
+          <figure class="showcase-card portrait reveal">
+            <span class="showcase-label">الوضع العمودي</span>
+            <button class="image-zoom" type="button"
+                    data-image="assets/images/app-portrait.webp"
+                    data-alt="واجهة التطبيق العمودية بالحجم الكامل"
+                    data-caption="واجهة عمودية مناسبة للشاشات الرأسية">
+              <img src="assets/images/app-portrait.webp"
+                   alt="معاينة واجهة التطبيق العمودية" loading="lazy">
+            </button>
+          </figure>
+
+          <figure class="showcase-card reveal">
+            <span class="showcase-label">الوضع الأفقي</span>
+            <button class="image-zoom" type="button"
+                    data-image="assets/images/app-landscape.webp"
+                    data-alt="واجهة التطبيق الأفقية بالحجم الكامل"
+                    data-caption="واجهة أفقية تستفيد من عرض الشاشة بالكامل">
+              <img src="assets/images/app-landscape.webp"
+                   alt="معاينة واجهة التطبيق الأفقية" loading="lazy">
+            </button>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="csv-template" class="section section-soft csv-section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">نموذج ملف مواقيت الصلاة</p>
+          <h2 class="section-title">حمّل ملف CSV جاهزًا أو استخدمه كنموذج</h2>
+          <p class="section-description">
+            التطبيق يأتي بمواقيت مدينة الموصل افتراضيًا. الملف المرفق يحتوي على مواقيت
+            الموصل لمدة سنة كاملة، ويمكن استخدام بنيته لإنشاء ملف خاص بمدينة أخرى،
+            ثم رفع الملف من إعدادات التطبيق بعد مراجعة المواقيت بدقة.
+          </p>
+        </header>
+
+        <div class="csv-layout">
+          <article class="csv-info-card reveal">
+            <span class="csv-file-badge">CSV · 365 يومًا</span>
+            <h3>ملف مواقيت الموصل</h3>
+            <p>
+              لا تغيّر أسماء الأعمدة أو ترتيبها. اكتب جميع الأوقات بصيغة
+              <code>HH:MM</code> مثل <code>05:47</code>، واحفظ الملف بترميز UTF-8.
+            </p>
+
+            <div class="csv-actions">
+              <a class="button button-primary"
+                 href="assets/downloads/mosul_prayer_times.csv"
+                 download="mosul_prayer_times.csv">
+                تنزيل نموذج CSV
+              </a>
+              <a class="button button-secondary"
+                 href="assets/downloads/mosul_prayer_times.csv"
+                 target="_blank" rel="noopener">
+                عرض الملف
+              </a>
+            </div>
+
+            <ul class="csv-rules">
+              <li>الأعمدة المطلوبة: <span dir="ltr">Month_Arabic, Day, Fajr, Shuruq, Dhuhr, Asr, Maghrib, Isha</span></li>
+              <li>يجب أن يحتوي كل يوم على صف مستقل.</li>
+              <li>لا تضف أعمدة جديدة ولا تحذف أي عمود مطلوب.</li>
+              <li>راجع المواقيت قبل اعتماد الملف داخل المسجد.</li>
             </ul>
           </article>
 
-          <div class="feature-grid">
-            <article class="feature-card reveal"><span>01</span><h3>شريط أحاديث وإعلانات</h3><p>شريط متحرك اختياري يعرض الأحاديث أو الرسائل التي يحددها المستخدم، ويظهر بوضوح أسفل الشاشة.</p></article>
-            <article class="feature-card reveal"><span>02</span><h3>تذكير الهاتف الصامت</h3><p>شاشة تنبيه قبل الإقامة تساعد المصلين على وضع هواتفهم في الوضع الصامت.</p></article>
-            <article class="feature-card reveal"><span>03</span><h3>تخصيص كامل للمسجد</h3><p>اسم الجامع، أوقات الإقامة، الألوان، الصور، الأذكار، والأصوات المخصصة من داخل الإعدادات.</p></article>
-            <article class="feature-card reveal"><span>04</span><h3>تشغيل تلقائي وموثوق</h3><p>يعيد تجهيز التنبيهات بعد إعادة تشغيل الجهاز أو تغير التاريخ والوقت والمنطقة الزمنية.</p></article>
-            <article class="feature-card reveal"><span>05</span><h3>مواقيت أي مدينة</h3><p>مواقيت الموصل مدمجة افتراضياً، ويمكن اعتماد أي مدينة برفع ملف CSV سنوي صحيح.</p></article>
-            <article class="feature-card reveal"><span>06</span><h3>جدولة أسبوعية متجددة</h3><p>يحتفظ دائماً بمواقيت الأيام السبعة القادمة ويضيف يوماً جديداً تلقائياً بعد انقضاء كل يوم.</p></article>
-          </div>
+          <article class="csv-preview-card reveal" aria-labelledby="csvPreviewTitle">
+            <div class="csv-preview-heading">
+              <div>
+                <p class="csv-preview-kicker">معاينة من الملف</p>
+                <h3 id="csvPreviewTitle">الشكل المطلوب للصفوف والأعمدة</h3>
+              </div>
+              <span>أول 6 أيام</span>
+            </div>
+
+            <div class="csv-table-scroll" tabindex="0" aria-label="معاينة جدول ملف مواقيت الصلاة">
+              <table class="csv-table" dir="ltr">
+                <thead><tr><th scope="col">Month_Arabic</th><th scope="col">Day</th><th scope="col">Fajr</th><th scope="col">Shuruq</th><th scope="col">Dhuhr</th><th scope="col">Asr</th><th scope="col">Maghrib</th><th scope="col">Isha</th></tr></thead>
+                <tbody>
+                  <tr><td>كانون الثاني</td><td>1</td><td>05:47</td><td>07:16</td><td>12:16</td><td>02:49</td><td>05:09</td><td>06:30</td></tr>
+<tr><td>كانون الثاني</td><td>2</td><td>05:47</td><td>07:16</td><td>12:17</td><td>02:49</td><td>05:09</td><td>06:31</td></tr>
+<tr><td>كانون الثاني</td><td>3</td><td>05:47</td><td>07:16</td><td>12:17</td><td>02:50</td><td>05:10</td><td>06:32</td></tr>
+<tr><td>كانون الثاني</td><td>4</td><td>05:48</td><td>07:16</td><td>12:17</td><td>02:51</td><td>05:11</td><td>06:32</td></tr>
+<tr><td>كانون الثاني</td><td>5</td><td>05:48</td><td>07:16</td><td>12:18</td><td>02:52</td><td>05:12</td><td>06:33</td></tr>
+<tr><td>كانون الثاني</td><td>6</td><td>05:48</td><td>07:16</td><td>12:18</td><td>02:52</td><td>05:12</td><td>06:34</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section phone-section">
-      <div class="container phone-grid">
-        <div class="phone-copy reveal">
-          <p class="eyebrow">الفائدة خارج المسجد</p>
-          <h2>تجربة هاتف عملية، من دون تشغيل خدمات ثقيلة طوال اليوم</h2>
-          <p>
-            يعمل التطبيق على الهاتف بواجهة واضحة وتنبيهات للصلاة. عند استخدام التطبيق
-            يعمل الصوت الكامل، وعند إغلاقه يستخدم Android تنبيهاً قصيراً وموثوقاً،
-            من دون تكرار الصوت أو إبقاء خدمة دائمة ثقيلة.
-          </p>
-          <div class="phone-features">
-            <div><strong>تنبيهات الصلاة</strong><span>حتى عند إغلاق الواجهة بعد منح الصلاحيات</span></div>
-            <div><strong>طقس تلقائي</strong><span>عنوان IP ثم GPS ثم الموصل كخيار احتياطي</span></div>
-            <div><strong>إعدادات سريعة</strong><span>حفظ خفيف وتحميل الملفات عند الحاجة فقط</span></div>
-            <div><strong>ملفات مخصصة</strong><span>صور وأصوات ومواقيت تحت تحكم المستخدم</span></div>
-          </div>
-        </div>
-        <div class="portrait-stage reveal">
-          <img src="assets/images/app-portrait.webp" alt="واجهة Salat_FM العمودية على الهاتف" width="720" height="1480" loading="lazy">
-          <div class="portrait-caption"><strong>الوضع العمودي</strong><span>للهاتف والشاشات الرأسية</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft reliability-section">
-      <div class="container reliability-grid">
-        <div class="reliability-copy reveal">
-          <p class="eyebrow">مصمم للاستخدام اليومي</p>
-          <h2>ثبات في المواعيد، وسرعة في الفتح والحفظ</h2>
-          <p>تم تنظيم التطبيق ليعرض البيانات المخزنة أولاً ثم يجري التحديثات الخفيفة عند الحاجة، كي يبقى مناسباً للهواتف القديمة وأجهزة TV Box.</p>
-        </div>
-        <div class="reliability-cards">
-          <article class="reliability-card reveal"><span>01</span><div><strong>يفتح بسرعة</strong><p>المواقيت المحلية لا تنتظر الطقس أو الإنترنت.</p></div></article>
-          <article class="reliability-card reveal"><span>02</span><div><strong>يتجدد تلقائياً</strong><p>نافذة الأيام السبعة تُحدّث من دون تدخل يومي.</p></div></article>
-          <article class="reliability-card reveal"><span>03</span><div><strong>لا يعمل طوال اليوم</strong><p>التنبيهات تستيقظ عند الموعد بدلاً من خدمة ثقيلة دائمة.</p></div></article>
-          <article class="reliability-card reveal"><span>04</span><div><strong>يحافظ على آخر بيانات صحيحة</strong><p>أي خطأ عابر لا يمسح المواقيت المخزنة.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section gallery-section" id="gallery">
-      <div class="container">
-        <header class="section-heading reveal">
-          <p class="eyebrow">صور النسخة المعتمدة</p>
-          <h2>شريط الأحاديث والمواقيت في الوضعين الأفقي والعمودي</h2>
-          <p>اضغط على أي صورة لعرضها بالحجم الكامل.</p>
-        </header>
-        <div class="gallery-grid">
-          <figure class="gallery-card gallery-wide reveal">
-            <button class="image-zoom" type="button" data-image="assets/images/app-landscape.webp" data-alt="واجهة Salat_FM الأفقية بالحجم الكامل" data-caption="الوضع الأفقي لشاشات المساجد والتلفاز">
-              <img src="assets/images/app-landscape.webp" alt="واجهة Salat_FM الأفقية مع شريط الأحاديث" width="1273" height="709" loading="lazy">
-            </button>
-            <figcaption><div><strong>واجهة شاشة المسجد</strong><span>عرض أفقي واسع للتلفاز وAndroid TV Box</span></div><bdi>1273 × 709</bdi></figcaption>
-          </figure>
-          <figure class="gallery-card gallery-tall reveal">
-            <button class="image-zoom" type="button" data-image="assets/images/app-portrait.webp" data-alt="واجهة Salat_FM العمودية بالحجم الكامل" data-caption="الوضع العمودي للهواتف والشاشات الرأسية">
-              <img src="assets/images/app-portrait.webp" alt="واجهة Salat_FM العمودية مع شريط الأحاديث" width="720" height="1480" loading="lazy">
-            </button>
-            <figcaption><div><strong>الواجهة العمودية</strong><span>للهاتف والشاشات الرأسية</span></div><bdi>720 × 1480</bdi></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section city-section" id="csv-template">
-      <div class="container city-grid">
-        <div class="city-copy reveal">
-          <p class="eyebrow">مدينتك ومصدر مواقيتك</p>
-          <h2>الموصل جاهزة افتراضياً، وأي مدينة أخرى عبر ملف CSV</h2>
-          <p>
-            يمكن لإدارة المسجد اعتماد ملف سنوي خاص بالمدينة أو المصدر المحلي الموثوق.
-            حمّل النموذج، عدّل القيم مع إبقاء أسماء الأعمدة وترتيبها، ثم ارفعه من إعدادات التطبيق.
-          </p>
-          <div class="city-actions">
-            <a class="button button-primary" href="assets/downloads/mosul_prayer_times.csv" download="mosul_prayer_times.csv">تنزيل نموذج المواقيت</a>
-            <a class="button button-secondary" href="assets/downloads/mosul_prayer_times.csv" target="_blank" rel="noopener">معاينة الملف</a>
-          </div>
-          <p class="city-warning">يجب مراجعة المواقيت والإقامة قبل اعتمادها على شاشة المسجد.</p>
-        </div>
-        <div class="csv-card reveal" aria-label="معاينة ملف مواقيت الصلاة">
-          <div class="csv-card-head"><span>CSV · UTF-8</span><strong>بنية موحدة وسهلة النقل</strong></div>
-          <div class="csv-scroll" tabindex="0">
-            <table dir="ltr">
-              <thead><tr><th>Month_Arabic</th><th>Day</th><th>Fajr</th><th>Shuruq</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Isha</th></tr></thead>
-              <tbody>
-                <tr><td>كانون الثاني</td><td>1</td><td>05:47</td><td>07:16</td><td>12:16</td><td>02:49</td><td>05:09</td><td>06:30</td></tr>
-                <tr><td>كانون الثاني</td><td>2</td><td>05:47</td><td>07:16</td><td>12:17</td><td>02:49</td><td>05:09</td><td>06:31</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p>اكتب الأوقات بصيغة <bdi>HH:MM</bdi> ولا تغيّر أسماء الأعمدة.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section download-section" id="download">
+    <section id="download" class="section">
       <div class="container download-grid">
         <article class="download-card reveal">
-          <div class="download-head">
-            <img src="assets/images/logo-fm.webp" alt="شعار Salat_FM" width="92" height="92" loading="lazy">
-            <div><p class="eyebrow">التنزيل الرسمي</p><h2><bdi>Salat_FM 2.6.5</bdi></h2><p>الإصدار المعتمد للتثبيت على أجهزة Android.</p></div>
-          </div>
+          <p class="section-kicker">التنزيل الرسمي</p>
+          <h2>حمّل تطبيق Android بصيغة APK</h2>
+          <p>
+            نزّل النسخة الرسمية الموقعة مباشرة من هذا الموقع، وتجنب النسخ المعدلة
+            أو الملفات التي تحمل اسمًا مختلفًا من مصادر غير موثوقة.
+          </p>
+
+          <p class="download-city-note">
+            <strong>الإعداد الافتراضي:</strong>
+            مواقيت مدينة الموصل. يمكن تغييرها لأي مدينة برفع ملف CSV من إعدادات التطبيق.
+          </p>
+
           <dl class="download-meta">
-            <div><dt>اسم الملف</dt><dd><bdi>firas-prayer-display.apk</bdi></dd></div>
-            <div><dt>الإصدار</dt><dd data-version>2.6.5</dd></div>
-            <div><dt>تاريخ الإصدار</dt><dd data-release-date>19 يوليو 2026</dd></div>
-            <div><dt>حجم الملف</dt><dd data-apk-size>—</dd></div>
-            <div class="hash-row"><dt>بصمة SHA-256</dt><dd data-apk-sha>—</dd></div>
+            <div class="meta-row">
+              <dt>الإصدار</dt>
+              <dd data-version>2.6.5</dd>
+            </div>
+            <div class="meta-row">
+              <dt>رقم البناء</dt>
+              <dd data-build>265</dd>
+            </div>
+            <div class="meta-row">
+              <dt>التوقيع</dt>
+              <dd>Release رسمي · APK Signature Scheme v2</dd>
+            </div>
+            <div class="meta-row">
+              <dt>النظام</dt>
+              <dd>Android للهواتف والتلفاز والأجهزة الملحقة</dd>
+            </div>
+            <div class="meta-row">
+              <dt>الصيغة</dt>
+              <dd>APK</dd>
+            </div>
+            <div class="meta-row">
+              <dt>الحجم</dt>
+              <dd data-apk-size>34.8 MB</dd>
+            </div>
+            <div class="meta-row">
+              <dt>SHA-256</dt>
+              <dd data-apk-sha>97b531bd60d97a34689d674786c8a1ef06d0804f8967babce5a11b340bb10dba</dd>
+            </div>
           </dl>
+
           <div class="download-actions">
-            <a class="button button-primary button-large js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">تنزيل APK الآن</a>
-            <a class="button button-secondary" href="assets/downloads/firas-prayer-display_SHA256.txt" download>تنزيل ملف البصمة</a>
+            <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
+              تنزيل التطبيق الآن
+            </a>
+            <a class="button button-secondary" href="assets/downloads/firas-prayer-display_SHA256.txt" download>
+              تنزيل بصمة SHA-256
+            </a>
           </div>
-          <p class="download-source">لأمانك، نزّل التطبيق من هذه الصفحة الرسمية فقط.</p>
         </article>
 
-        <aside class="install-card reveal" id="install">
-          <div class="notice-icon" aria-hidden="true">!</div>
-          <p class="eyebrow">ملاحظة مهمة قبل التثبيت</p>
-          <h2>إذا لم يثبت التطبيق من المحاولة الأولى، أعد المحاولة</h2>
-          <p>
-            تختلف إصدارات Android وواجهات الشركات المصنّعة وسياسات الحماية من جهاز إلى آخر.
-            لذلك قد يحتاج بعض الأجهزة إلى إعادة فتح ملف APK، أو السماح للمتصفح أو مدير الملفات
-            بالتثبيت من هذا المصدر، أو تأكيد فحص أمني إضافي. إعادة المحاولة بعد منح الإذن تحل
-            المشكلة في كثير من الحالات ولا تعني أن ملف التطبيق تالف.
-          </p>
-          <ul>
-            <li>انتظر حتى يكتمل تنزيل الملف بالكامل.</li>
-            <li>اسمح بالتثبيت من المتصفح أو مدير الملفات المستخدم.</li>
-            <li>عند تحديث نسخة سابقة استخدم الملف الموقّع بالمفتاح نفسه.</li>
-          </ul>
-        </aside>
-      </div>
+        <article id="install" class="install-card reveal">
+          <p class="section-kicker">طريقة التثبيت</p>
+          <h2>أربع خطوات بسيطة</h2>
 
-      <div class="container install-steps reveal" aria-label="خطوات التثبيت">
-        <article><span>1</span><div><strong>نزّل التطبيق</strong><p>انتظر اكتمال تنزيل ملف APK.</p></div></article>
-        <article><span>2</span><div><strong>اسمح بالمصدر</strong><p>وافق على التثبيت من المتصفح أو مدير الملفات.</p></div></article>
-        <article><span>3</span><div><strong>ثبّت وافتح</strong><p>امنح الإشعارات والموقع عند طلبهما.</p></div></article>
-        <article><span>4</span><div><strong>راجع المواقيت</strong><p>تأكد من المدينة والإقامة قبل اعتماد شاشة المسجد.</p></div></article>
+          <ol class="install-steps">
+            <li>اضغط زر التنزيل وانتظر اكتمال ملف <bdi>firas-prayer-display.apk</bdi>.</li>
+            <li>افتح الملف على الهاتف أو الجهاز اللوحي أو التلفاز أو جهاز Android TV Box.</li>
+            <li>اسمح بالتثبيت من هذا المصدر عند طلب Android وأكّد رمز أمان الجهاز عند الحاجة.</li>
+            <li>افتح التطبيق مرة واحدة، راجع المواقيت، واسمح بالتنبيهات والمنبهات الدقيقة عندما يطلب النظام.</li>
+          </ol>
+
+          <p class="install-security-note">
+            ظهور تحذير «تطبيق من مصدر غير معروف» أمر طبيعي عند تثبيت APK من خارج Google Play.
+            الملف الموجود هنا موقّع رسميًا، ويمكن مقارنة بصمة SHA-256 قبل التثبيت.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section class="section section-soft" id="faq">
-      <div class="container faq-grid">
-        <header class="section-heading faq-heading reveal">
-          <p class="eyebrow">الأسئلة الشائعة</p>
-          <h2>معلومات مهمة قبل الاستخدام</h2>
-          <p>إجابات مختصرة عن المساجد والهواتف والمواقيت والتنبيهات.</p>
+
+    <section id="device-help" class="section section-soft">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">مساعدة في إعداد الجهاز</p>
+          <h2 class="section-title">حلول عملية للتثبيت والتشغيل التلقائي</h2>
+          <p class="section-description">
+            تختلف أجهزة Android TV من شركة إلى أخرى. لذلك قد تحتاج بعض أجهزة التلفاز
+            إلى مدير ملفات لفتح ملف APK، أو إلى تطبيق مساعد لتشغيل شاشة الصلاة تلقائيًا
+            بعد إعادة تشغيل الجهاز.
+          </p>
         </header>
+
+        <div class="device-help-grid">
+          <article class="device-help-card reveal">
+            <div class="device-help-number">01</div>
+            <h3>عندما لا يظهر ملف APK على التلفاز</h3>
+            <p>
+              ملف APK ربما يحتاج إلى مدير ملفات يستطيع الوصول إلى مجلد التنزيلات
+              أو ذاكرة USB وبدء عملية التثبيت. يمكن تثبيت
+              <strong>File Commander</strong> من متجر Google Play الخاص بالتلفاز،
+              ثم فتح ملف <bdi>firas-prayer-display.apk</bdi> من خلاله.
+            </p>
+            <a class="button button-secondary external-tool-link"
+               href="https://play.google.com/store/apps/details?id=com.mobisystems.fileman"
+               target="_blank"
+               rel="noopener noreferrer">
+              فتح File Commander في Google Play
+            </a>
+          </article>
+
+          <article class="device-help-card reveal">
+            <div class="device-help-number">02</div>
+            <h3>التشغيل بعد انقطاع الكهرباء</h3>
+            <p>
+              صُمم تطبيق شاشة الصلاة ليستأنف التشغيل تلقائيًا بعد عودة الكهرباء،
+              لكن بعض أجهزة التلفاز تمنع تشغيل التطبيقات تلقائيًا بسبب قيود الشركة المصنّعة.
+              في هذه الحالة يمكن استخدام تطبيق <strong>Launch on Boot</strong>،
+              ثم اختيار تطبيق شاشة الصلاة ليُفتح بعد تشغيل الجهاز.
+            </p>
+
+            <ol class="compact-steps">
+              <li>ثبّت Launch on Boot وافتحه مرة واحدة.</li>
+              <li>فعّل خيار التشغيل عند الإقلاع أو الاستيقاظ.</li>
+              <li>اختر تطبيق شاشة مواقيت الصلاة من قائمة التطبيقات.</li>
+              <li>أعد تشغيل الجهاز واختبر التشغيل التلقائي.</li>
+            </ol>
+
+            <div class="tool-actions">
+              <a class="button button-primary external-tool-link"
+                 href="assets/downloads/Launch_on_Boot.apk"
+                 download="Launch_on_Boot.apk">
+                تنزيل Launch on Boot APK
+              </a>
+            </div>
+
+            <p class="tool-download-note">
+              تم توفير ملف Launch on Boot مباشرة داخل هذا الموقع لتسهيل تثبيته
+              على أجهزة التلفاز التي لا يظهر فيها التطبيق داخل المتجر.
+              بعد التنزيل، افتح الملف باستخدام مدير الملفات وثبّته، ثم اختر
+              تطبيق شاشة مواقيت الصلاة من داخل Launch on Boot.
+            </p>
+          </article>
+
+          <article class="device-help-card device-help-note reveal">
+            <div class="device-help-number">03</div>
+            <h3>ملاحظات مهمة قبل الاستخدام</h3>
+            <ul class="device-help-list">
+              <li>
+                فعّل السماح بتثبيت التطبيقات من المصدر الذي تستخدمه، مثل مدير الملفات
+                أو المتصفح، ثم ألغِ هذا السماح بعد اكتمال التثبيت إن رغبت.
+              </li>
+              <li>
+                قد تحتاج بعض أجهزة التلفاز إلى تعطيل تحسين البطارية أو السماح بالتشغيل
+                في الخلفية لتطبيق Launch on Boot.
+              </li>
+              <li>
+                اختبر الجهاز بعد فصل الكهرباء وإعادتها قبل الاعتماد عليه داخل المسجد.
+              </li>
+              <li>
+                File Commander وLaunch on Boot تطبيقان خارجيان مستقلان،
+                وليسا جزءًا من تطبيق شاشة مواقيت الصلاة.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">الأسئلة الشائعة</p>
+          <h2 class="section-title">معلومات مهمة قبل التنزيل</h2>
+        </header>
+
         <div class="faq-list">
-          <details class="reveal"><summary>هل التطبيق مجاني للمساجد؟</summary><p>نعم. الغاية الأساسية للمشروع هي توفير شاشة مواقيت عملية للمساجد مجاناً. ويمكن استخدام التطبيق أيضاً على الهواتف والأجهزة اللوحية.</p></details>
-          <details class="reveal"><summary>هل يحتاج التطبيق إلى الإنترنت طوال الوقت؟</summary><p>لا. المواقيت تُقرأ من الملف المحلي. يحتاج الطقس أو المحتوى الشبكي إلى الاتصال عند التحديث فقط.</p></details>
-          <details class="reveal"><summary>هل يمكن استخدامه خارج مدينة الموصل؟</summary><p>نعم. ارفع ملف CSV سنوياً لمواقيت مدينتك بعد مراجعته، وسيستخدم التطبيق الملف الجديد بدلاً من المواقيت الافتراضية.</p></details>
-          <details class="reveal"><summary>هل تعمل التنبيهات عند إغلاق التطبيق؟</summary><p>نعم بعد منح صلاحية الإشعارات والمنبه الدقيق. قد تتوقف إذا أوقف المستخدم التطبيق إجبارياً أو عطّل القناة أو الصلاحية.</p></details>
-          <details class="reveal"><summary>لماذا قد تظهر شاشة تأكيد أمني؟</summary><p>لأن التطبيق يُنزّل من موقعه الرسمي خارج Google Play، وقد تختلف رسائل الحماية حسب إصدار Android والشركة المصنّعة.</p></details>
-          <details class="reveal"><summary>هل أستطيع تخصيص الصور والأصوات؟</summary><p>نعم. يمكن اختيار صور أذكار وصور عمودية وأفقية وملفات صوت مخصصة، مع إمكانية العودة إلى الملفات الأصلية.</p></details>
+          <details class="reveal">
+            <summary>هل يعمل الأذان عندما أغلق التطبيق من قائمة التطبيقات الأخيرة؟</summary>
+            <p>
+              نعم. بعد فتح التطبيق وضبط المواقيت مرة واحدة، تُسجَّل منبهات الصلاة في Android
+              ويعمل الأذان من الخلفية من دون بقاء الشاشة مفتوحة. تجنب استخدام «فرض الإيقاف»
+              من إعدادات النظام لأنه يعطّل مكونات التطبيق حتى تفتحه مرة أخرى.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل يستمر الأذان بعد إعادة تشغيل الهاتف؟</summary>
+            <p>
+              يعيد التطبيق جدولة منبهات الصلاة بعد تشغيل الهاتف وتغيير الوقت أو المنطقة الزمنية.
+              في بعض الأجهزة يُنصح بالسماح بالتشغيل التلقائي وجعل البطارية «غير مقيّدة» لضمان أفضل اعتمادية.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>لماذا يطلب Android السماح بالتثبيت من مصدر غير معروف؟</summary>
+            <p>
+              لأن ملف APK يُنزّل مباشرة من الموقع وليس من Google Play. هذا تحذير نظام طبيعي.
+              استخدم الملف الموجود في هذه الصفحة فقط، وتحقق من بصمة SHA-256 المعروضة في قسم التنزيل.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل تتراكم الملفات المؤقتة مع مرور الوقت؟</summary>
+            <p>
+              يتضمن التطبيق صيانة تلقائية خفيفة كل 10 أيام، وزرًا يدويًا لتنظيف الملفات المؤقتة.
+              لا يحذف التنظيف المواقيت أو ملفات الأذان والصور أو إعدادات المستخدم.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>هل التطبيق مجاني؟</summary>
+            <p>نعم، التطبيق مجاني ووقف خيري لخدمة المساجد، ولا يجوز بيع التطبيق نفسه.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>على أي أجهزة يعمل التطبيق؟</summary>
+            <p>
+              صُمم التطبيق للعمل على مختلف أجهزة Android، بما في ذلك الهواتف والأجهزة اللوحية
+              وأجهزة التلفاز الذكية وأجهزة Android TV Box والأجهزة الملحقة، بشرط أن يسمح الجهاز
+              بتثبيت ملفات APK وتشغيل تطبيقات Android.
+            </p>
+          </details>
+
+
+          <details class="reveal">
+            <summary>لماذا لا أستطيع رؤية ملف APK أو فتحه على التلفاز؟</summary>
+            <p>
+              بعض أجهزة التلفاز لا تحتوي على مدير ملفات مناسب. ثبّت File Commander
+              من متجر التلفاز، ثم افتح مجلد التنزيلات أو ذاكرة USB واضغط على ملف APK.
+              راجع قسم <a class="faq-inline-link" href="#device-help">مساعدة في إعداد الجهاز</a>.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>لماذا لا يعمل التطبيق تلقائيًا بعد عودة الكهرباء في بعض أجهزة التلفاز؟</summary>
+            <p>
+              تختلف قيود التشغيل التلقائي بين الشركات المصنّعة. إذا لم يبدأ التطبيق
+              تلقائيًا، نزّل Launch on Boot من قسم مساعدة إعداد الجهاز،
+              ثم اختر تطبيق شاشة الصلاة واختبر الجهاز بعد إعادة التشغيل.
+              لا يمكن ضمان هذه الخاصية على جميع طرازات التلفاز.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل التطبيق مفتوح المصدر؟</summary>
+            <p>لا. التطبيق مجاني لكنه غير مفتوح المصدر، وجميع حقوقه محفوظة للدكتور فراس اسود العبادي.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>ما صيغة ملف مواقيت الصلاة؟</summary>
+            <p>
+              يجب أن يكون بصيغة CSV، وبالأعمدة التالية وبالترتيب نفسه:
+              <span dir="ltr">Month_Arabic, Day, Fajr, Shuruq, Dhuhr, Asr, Maghrib, Isha</span>.
+              وتُكتب الأوقات بصيغة <span dir="ltr">HH:MM</span> مثل <span dir="ltr">05:47</span>.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>أين أجد نموذج ملف CSV جاهزًا؟</summary>
+            <p>
+              يوجد قسم <a class="faq-inline-link" href="#csv-template">نموذج ملف مواقيت الصلاة</a>
+              في هذه الصفحة. يمكنك تنزيل ملف مواقيت الموصل أو فتحه لمشاهدة شكل الأعمدة والصفوف.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل أستطيع تعديل ملف CSV في Excel أو أي برنامج جداول؟</summary>
+            <p>
+              نعم. عدّل القيم فقط، ثم احفظ الملف بصيغة CSV وبترميز UTF-8.
+              لا تغيّر أسماء الأعمدة أو ترتيبها، ولا تحذف أي عمود مطلوب.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل مواقيت ملف النموذج مناسبة لكل المدن؟</summary>
+            <p>
+              لا. الملف المرفق نموذج لمواقيت مدينة الموصل. عند استخدامه لمدينة أخرى،
+              استبدل جميع المواقيت ببيانات صحيحة وراجعها قبل اعتمادها في المسجد.
+            </p>
+          </details>
+
+          <details class="reveal">
+            <summary>ما صيغة ملفات الأذان والمنبه؟</summary>
+            <p>يجب أن تكون الملفات الصوتية بصيغة MP3.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>هل يمكن تغيير صور الأذكار؟</summary>
+            <p>نعم، يمكن اختيار صور PNG مستقلة للوضعين العمودي والأفقي.</p>
+          </details>
+
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <p class="eyebrow">التواصل والدعم</p>
-          <h2>أرسل ملاحظتك من دون عرض عنوان البريد علناً</h2>
-          <p>
-            للاستفسار عن استخدام التطبيق في مسجد، أو الإبلاغ عن مشكلة، أو اقتراح تطوير،
-            املأ النموذج. سيُفتح تطبيق البريد في جهازك برسالة جاهزة، بينما يبقى عنوان
-            التواصل مخفياً عن العرض المباشر في الموقع.
-          </p>
-          <div class="contact-note"><strong>قبل الإرسال</strong><span>اذكر نوع الجهاز وإصدار Android ووصف المشكلة بوضوح.</span></div>
-        </div>
+    <section class="cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <img class="cta-logo" src="assets/images/logo-fm.webp" alt="شعار فراس أسود">
 
-        <form class="contact-form reveal" id="contactForm">
-          <div class="field-grid">
-            <label>الاسم<input type="text" name="name" autocomplete="name" maxlength="80" required></label>
-            <label>وسيلة الرد<input type="email" name="reply" autocomplete="email" maxlength="120" required></label>
+          <div class="cta-copy">
+            <h2>مواقيت واضحة وأذان يعتمد عليه</h2>
+            <p>ثبّت التطبيق على الهاتف أو شاشة المسجد، راجع المواقيت، ثم دع Android يتولى التنبيهات في الخلفية.</p>
           </div>
-          <label>نوع الرسالة
-            <select name="topic">
-              <option>دعم استخدام التطبيق في مسجد</option>
-              <option>مشكلة في التثبيت أو التشغيل</option>
-              <option>ملاحظة على المواقيت أو CSV</option>
-              <option>اقتراح تطوير</option>
-              <option>استفسار عام</option>
-            </select>
-          </label>
-          <label>الرسالة<textarea name="message" rows="6" maxlength="2500" required></textarea></label>
-          <button class="button button-primary" type="submit">إعداد رسالة التواصل</button>
-          <p class="form-note" id="contactStatus" aria-live="polite">لن يظهر عنوان التواصل على الصفحة؛ سيتم فتح تطبيق البريد عند الإرسال.</p>
-        </form>
-      </div>
-    </section>
 
-    <section class="final-cta">
-      <div class="container final-cta-inner reveal">
-        <div><p>شاشة مسجد مجانية وواضحة</p><h2>نزّل Salat_FM 2.6.5 وراجع مواقيت مسجدك</h2></div>
-        <a class="button button-primary button-large js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">تنزيل التطبيق</a>
+          <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
+            تنزيل APK
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand"><img src="assets/images/logo-fm.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Salat_FM</strong><span>تصميم وتطوير الدكتور فراس اسود العبادي</span></div></div>
-      <nav aria-label="روابط الموقع"><a href="terms.html">شروط الاستخدام</a><a href="privacy.html">سياسة الخصوصية</a><a href="#contact">التواصل</a><a href="../">الموقع الشخصي</a></nav>
-      <p>التطبيق مجاني لخدمة المساجد، ويعمل أيضاً على الهواتف — جميع الحقوق محفوظة © <span data-year></span></p>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">تصميم وتطوير الدكتور فراس اسود العبادي</div>
+        <p class="footer-note">
+          التطبيق مجاني ووقف خيري لخدمة بيوت الله — جميع الحقوق محفوظة ©
+          <span data-year></span>
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="روابط قانونية">
+        <a href="terms.html">شروط الاستخدام</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="#download">التنزيل</a>
+        <span class="footer-contact">واتساب: <bdi>@FirasAswad</bdi></span>
+        <a href="../">الموقع الشخصي</a>
+      </nav>
     </div>
   </footer>
 
-  <dialog class="image-modal" id="imageModal" aria-labelledby="imageModalCaption">
-    <button class="modal-x" id="imageModalClose" type="button" aria-label="إغلاق">×</button>
+  <dialog id="imageModal" class="image-modal"
+          aria-labelledby="imageModalCaption">
     <img id="imageModalPicture" src="" alt="">
-    <p id="imageModalCaption"></p>
+    <div class="modal-footer">
+      <p id="imageModalCaption"></p>
+      <button id="imageModalClose" class="modal-close" type="button">إغلاق</button>
+    </div>
   </dialog>
 
-  <script src="assets/js/config.js?v=265-final"></script>
-  <script src="assets/js/main-wide.js?v=265-final"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main-wide.js?v=13"></script>
 </body>
 </html>

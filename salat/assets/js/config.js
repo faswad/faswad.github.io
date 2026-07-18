@@ -1,6 +1,6 @@
 window.APP_CONFIG = Object.freeze({
   version: "2.6.5",
-  releaseDate: "19 يوليو 2026",
+  buildNumber: "265",
   apkUrl: "assets/downloads/firas-prayer-display.apk",
   apkFileName: "firas-prayer-display.apk",
   apkSize: "34.8 MB",
