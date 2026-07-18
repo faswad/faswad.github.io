@@ -1,57 +1,37 @@
-# موقع الدكتور فراس أسود وتطبيق شاشة مواقيت الصلاة
+# رفع الموقع إلى GitHub Pages
 
-هذه الحزمة تحتوي الموقع الشخصي وصفحة تطبيق الصلاة بعد تحديثها للإصدار 2.5.11+58.
+هذه الحزمة تحتوي الموقع الشخصي وصفحة تطبيق **Salat_FM 2.6.5** بعد إعادة التصميم.
 
-## ما تم تحديثه
+## قبل الرفع
 
-- إضافة ملف التطبيق الرسمي مباشرة داخل الموقع:
-  `salat/assets/downloads/firas-prayer-display.apk`
-- تحديث معلومات الإصدار والحجم وبصمة SHA-256.
-- إضافة قسم واضح للجديد في الإصدار 2.5.11.
-- إبراز عمل الأذان والتنبيهات في الخلفية وبعد إعادة تشغيل الهاتف.
-- إضافة تذكير وضع الهاتف على الصامت وشاشة الأذكار وشريط الأحاديث.
-- توضيح صيانة التخزين والتنظيف التلقائي كل 10 أيام.
-- تحديث تعليمات التثبيت والتحذير الطبيعي عند تثبيت APK خارج Google Play.
-- الإبقاء على ملاحظة أن مواقيت مدينة الموصل هي الإعداد الافتراضي.
-- تحسين وصف المشروع في الصفحة الشخصية.
+لم يُرفق APK جديد مع تحديث الموقع. ملف APK الموجود داخل الحزمة هو الملف الذي كان موجوداً في الموقع القديم. عند توفر APK النهائي الموقّع، حدّثه بالأمر:
 
-## بيانات ملف APK
+```bash
+python3 tools/update_apk_metadata.py /المسار/إلى/firas-prayer-display.apk
+```
 
-- اسم الملف: `firas-prayer-display.apk`
-- الحزمة: `com.firas.prayer_displayer`
-- الإصدار: `2.5.11`
-- رقم البناء: `58`
-- الحجم: `39.0 MB` تقريباً
-- SHA-256:
-  `e98046df229677bf907845f84d1230b634f5a0d1ca12768b517d3d37dd13c3b4`
-- التوقيع: APK Signature Scheme v2
+سيتم تحديث الملف والحجم وبصمة SHA-256 تلقائياً.
 
-## الرفع إلى GitHub Pages
+## الرفع
 
-1. استبدل ملفات المستودع بمحتويات مجلد `faswad.github.io`.
-2. لا تحذف مجلد `.git` من نسختك المحلية الحالية.
-3. نفّذ:
+انسخ محتويات هذا المجلد إلى جذر مستودع `faswad.github.io` ثم نفّذ:
 
 ```bash
 git add .
-git commit -m "Update Salat app website to 2.5.11"
+git commit -m "Redesign Salat_FM 2.6.5 website"
 git push origin main
 ```
 
-4. اختبر:
+## روابط الفحص بعد الرفع
 
 - `https://faswad.github.io/`
 - `https://faswad.github.io/salat/`
 - `https://faswad.github.io/salat/assets/downloads/firas-prayer-display.apk`
 
-## عند إصدار نسخة جديدة
+## الملفات الأساسية
 
-استبدل ملف APK بنفس الاسم، ثم حدّث القيم داخل:
-
-`salat/assets/js/config.js`
-
-وأنشئ بصمة جديدة:
-
-```bash
-shasum -a 256 salat/assets/downloads/firas-prayer-display.apk
-```
+- صفحة التطبيق: `salat/index.html`
+- التصميم: `salat/assets/css/style-wide.css`
+- إعدادات النسخة وAPK: `salat/assets/js/config.js`
+- ملف التطبيق: `salat/assets/downloads/firas-prayer-display.apk`
+- تحديث APK آلياً: `tools/update_apk_metadata.py`

@@ -63,7 +63,7 @@
         if (privateStatus) privateStatus.textContent = "Please complete all required fields.";
         return;
       }
-      const target = atob("ZmFzd2FkQHVvbW9zdWwuZWR1Lmlx");
+      const target = atob(["ZmFz", "d2Fk", "QHVv", "bW9z", "dWwu", "ZWR1", "Lmlx"].join(""));
       const subject = `[Website] ${subjectText}`;
       const body = [
         `Name: ${name}`,
