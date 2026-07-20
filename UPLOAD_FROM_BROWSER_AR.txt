@@ -1,0 +1,10 @@
+طريقة رفع التحديث من المتصفح
+
+1. افتح مستودع faswad/faswad.github.io ثم الفرع main.
+2. احذف ملف APK القديم من المسار salat/assets/downloads إن كان موجوداً؛ التنزيل الآن من GitHub Release.
+3. ارفع ملفات هذه الحزمة مع الحفاظ على المجلدات نفسها، أو استبدل الملفات المتغيرة المذكورة في README_UPLOAD.md.
+4. اضغط Commit changes.
+5. انتظر اكتمال Pages deployment ثم افتح https://faswad.github.io/salat/ في نافذة خاصة.
+6. تأكد أن الصفحة تعرض Salat_FM 1.0.0 والبناء 1 وأن زر APK يعمل.
+
+لا ترفع مفتاح التوقيع أو key.properties.

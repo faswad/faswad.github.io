@@ -1,0 +1,15 @@
+{
+  "app_name": "Salat_FM",
+  "version": "1.0.0",
+  "build": 1,
+  "release_status": "first_official_public_release",
+  "release_date": "2026-07-20",
+  "tag": "v1.0.0",
+  "package_id": "com.firas.prayer_displayer",
+  "apk_file": "firas-prayer-display.apk",
+  "apk_size_bytes": 36492700,
+  "apk_size_mib": 34.8,
+  "sha256": "7bffb05fe2dfdab92272adb870490d81ad6f5d0599aaddb83ce611cafd9ad3e2",
+  "apk_url": "https://github.com/faswad/faswad.github.io/releases/download/v1.0.0/firas-prayer-display.apk",
+  "sha256_url": "https://github.com/faswad/faswad.github.io/releases/download/v1.0.0/firas-prayer-display.apk.sha256"
+}

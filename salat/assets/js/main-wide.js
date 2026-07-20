@@ -67,6 +67,10 @@
     if (config.apkUrl) button.href = config.apkUrl;
   });
 
+  $$(".js-sha-download").forEach((button) => {
+    if (config.sha256Url) button.href = config.sha256Url;
+  });
+
   const modal = $("#imageModal");
   const modalImage = $("#imageModalPicture");
   const modalCaption = $("#imageModalCaption");
