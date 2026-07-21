@@ -1,41 +1,57 @@
-# موقع Salat_FM 1.0.0 — الإصدار الرسمي الأول
+# موقع الدكتور فراس أسود وتطبيق شاشة مواقيت الصلاة
 
-هذه الحزمة مهيأة لتحديث موقع `faswad.github.io` من المتصفح وإظهار النسخة الرسمية الأولى:
+هذه الحزمة تحتوي الموقع الشخصي وصفحة تطبيق الصلاة بعد تحديثها للإصدار 2.5.11+58.
 
-- اسم التطبيق: `Salat_FM`
-- الإصدار: `1.0.0`
-- البناء: `1`
-- GitHub tag: `v1.0.0`
-- ملف APK: `firas-prayer-display.apk`
-- الحجم: `34.8 MiB`
-- SHA-256: `7bffb05fe2dfdab92272adb870490d81ad6f5d0599aaddb83ce611cafd9ad3e2`
+## ما تم تحديثه
 
-## رابط التنزيل المعتمد
+- إضافة ملف التطبيق الرسمي مباشرة داخل الموقع:
+  `salat/assets/downloads/firas-prayer-display.apk`
+- تحديث معلومات الإصدار والحجم وبصمة SHA-256.
+- إضافة قسم واضح للجديد في الإصدار 2.5.11.
+- إبراز عمل الأذان والتنبيهات في الخلفية وبعد إعادة تشغيل الهاتف.
+- إضافة تذكير وضع الهاتف على الصامت وشاشة الأذكار وشريط الأحاديث.
+- توضيح صيانة التخزين والتنظيف التلقائي كل 10 أيام.
+- تحديث تعليمات التثبيت والتحذير الطبيعي عند تثبيت APK خارج Google Play.
+- الإبقاء على ملاحظة أن مواقيت مدينة الموصل هي الإعداد الافتراضي.
+- تحسين وصف المشروع في الصفحة الشخصية.
 
-`https://github.com/faswad/faswad.github.io/releases/download/v1.0.0/firas-prayer-display.apk`
+## بيانات ملف APK
 
-## رابط بصمة SHA-256
+- اسم الملف: `firas-prayer-display.apk`
+- الحزمة: `com.firas.prayer_displayer`
+- الإصدار: `2.5.11`
+- رقم البناء: `58`
+- الحجم: `39.0 MB` تقريباً
+- SHA-256:
+  `e98046df229677bf907845f84d1230b634f5a0d1ca12768b517d3d37dd13c3b4`
+- التوقيع: APK Signature Scheme v2
 
-`https://github.com/faswad/faswad.github.io/releases/download/v1.0.0/firas-prayer-display.apk.sha256`
+## الرفع إلى GitHub Pages
 
-## ملاحظة مهمة للرفع من المتصفح
+1. استبدل ملفات المستودع بمحتويات مجلد `faswad.github.io`.
+2. لا تحذف مجلد `.git` من نسختك المحلية الحالية.
+3. نفّذ:
 
-ملف APK محفوظ في GitHub Release ولا يُوضع داخل مستودع الموقع، لأن حجمه أكبر من حد رفع الملفات عبر واجهة GitHub. لذلك تتضمن هذه الحزمة صفحات الموقع وملف SHA الصغير فقط، وتوجّه أزرار التنزيل إلى Release الرسمي.
+```bash
+git add .
+git commit -m "Update Salat app website to 2.5.11"
+git push origin main
+```
 
-## الملفات الأساسية التي تغيرت
-
-- `index.html`
-- `salat/index.html`
-- `salat/assets/js/config.js`
-- `salat/assets/js/main-wide.js`
-- `salat/assets/downloads/firas-prayer-display.apk.sha256`
-- `salat/assets/downloads/firas-prayer-display_SHA256.txt`
-- `WEBSITE_UPDATE_REPORT_AR.txt`
-
-بعد رفع الملفات إلى فرع `main` انتظر اكتمال GitHub Pages، ثم اختبر:
+4. اختبر:
 
 - `https://faswad.github.io/`
 - `https://faswad.github.io/salat/`
-- زر تنزيل APK في نافذة خاصة.
+- `https://faswad.github.io/salat/assets/downloads/firas-prayer-display.apk`
 
-لا ترفع `release-keystore.jks` أو `key.properties` إلى GitHub.
+## عند إصدار نسخة جديدة
+
+استبدل ملف APK بنفس الاسم، ثم حدّث القيم داخل:
+
+`salat/assets/js/config.js`
+
+وأنشئ بصمة جديدة:
+
+```bash
+shasum -a 256 salat/assets/downloads/firas-prayer-display.apk
+```
