@@ -2859,7 +2859,7 @@ aside,
 }
 
 
-/* Release 2.6.5 highlights */
+/* Salat_FM 1.0.0 first official release highlights */
 .latest-release-section {
   padding-top: 28px;
   padding-bottom: 28px;
@@ -2951,5 +2951,123 @@ aside,
 
   .download-actions .button {
     width: 100%;
+  }
+}
+
+
+/* Ten-theme overview and feedback notes */
+.theme-showcase-section {
+  overflow: hidden;
+}
+
+.themes-overview-card {
+  max-width: 1220px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, rgba(13, 28, 48, 0.92), rgba(5, 12, 22, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.themes-image-button {
+  border-radius: 19px;
+}
+
+.themes-image-button img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 19px;
+}
+
+.themes-overview-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 14px 8px;
+}
+
+.themes-overview-card figcaption strong {
+  color: var(--gold-soft);
+  font-size: 1.04rem;
+}
+
+.themes-overview-card figcaption span {
+  color: var(--text-muted);
+  font-size: 0.91rem;
+}
+
+.feedback-note-grid {
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px auto 0;
+}
+
+.feedback-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  background: rgba(10, 23, 40, 0.78);
+}
+
+.feedback-note-icon {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--gold-soft);
+  background: var(--gold-muted);
+  font-weight: 700;
+}
+
+.feedback-note h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+}
+
+.feedback-note p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .themes-overview-card {
+    padding: 7px;
+    border-radius: 18px;
+  }
+
+  .themes-image-button,
+  .themes-image-button img {
+    border-radius: 13px;
+  }
+
+  .themes-overview-card figcaption {
+    display: block;
+    padding: 14px 9px 7px;
+    text-align: center;
+  }
+
+  .themes-overview-card figcaption strong,
+  .themes-overview-card figcaption span {
+    display: block;
+  }
+
+  .themes-overview-card figcaption span {
+    margin-top: 4px;
+  }
+
+  .feedback-note-grid {
+    grid-template-columns: 1fr;
   }
 }
