@@ -119,7 +119,7 @@
         const cached = JSON.parse(cachedRaw);
         if (Date.now() - cached.savedAt < 15 * 60 * 1000) {
           countNode.textContent = new Intl.NumberFormat("ar-IQ").format(cached.count);
-          if (cached.latestUrl) {
+          if (cached.latestUrl && !config.preferLocalApk) {
             $$(".js-apk-download").forEach((button) => {
               button.href = cached.latestUrl;
               button.removeAttribute("download");
@@ -160,7 +160,7 @@
       countNode.textContent = new Intl.NumberFormat("ar-IQ").format(total);
       if (noteNode) noteNode.textContent = note;
 
-      if (latestUrl) {
+      if (latestUrl && !config.preferLocalApk) {
         $$(".js-apk-download").forEach((button) => {
           button.href = latestUrl;
           button.removeAttribute("download");
