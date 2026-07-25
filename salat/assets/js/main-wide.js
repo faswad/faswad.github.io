@@ -119,7 +119,7 @@
         const cached = JSON.parse(cachedRaw);
         if (Date.now() - cached.savedAt < 15 * 60 * 1000) {
           countNode.textContent = new Intl.NumberFormat("ar-IQ").format(cached.count);
-          if (cached.latestUrl && !config.preferLocalApk) {
+          if (cached.latestUrl) {
             $$(".js-apk-download").forEach((button) => {
               button.href = cached.latestUrl;
               button.removeAttribute("download");
@@ -141,26 +141,26 @@
       if (!response.ok) throw new Error(`GitHub API ${response.status}`);
 
       const releases = await response.json();
-      const assetName = config.releaseAssetName || config.apkFileName;
+      const assetNames = new Set(config.releaseAssetNames || ["firas-prayer-display.apk", config.apkFileName].filter(Boolean));
       let total = 0;
       let latestUrl = "";
 
       for (const release of releases) {
         if (release.draft) continue;
         for (const asset of release.assets || []) {
-          if (asset.name !== assetName) continue;
+          if (!assetNames.has(asset.name)) continue;
           total += Number(asset.download_count || 0);
           if (!latestUrl) latestUrl = asset.browser_download_url || "";
         }
       }
 
       const note = latestUrl
-        ? "العدد من GitHub Releases ويجمع تنزيلات ملف APK المنشور عبر الإصدارات."
-        : "لم يُنشر APK عبر GitHub Releases بعد؛ التنزيلات القديمة من ملف Pages الثابت لا يمكن استرجاع عددها.";
+        ? "إجمالي التنزيلات المسجلة لملفات Salat_FM المنشورة عبر GitHub Releases."
+        : "لم يُعثر على ملف Salat_FM في GitHub Releases بعد؛ استخدم رابط التنزيل الاحتياطي من الموقع.";
       countNode.textContent = new Intl.NumberFormat("ar-IQ").format(total);
       if (noteNode) noteNode.textContent = note;
 
-      if (latestUrl && !config.preferLocalApk) {
+      if (latestUrl) {
         $$(".js-apk-download").forEach((button) => {
           button.href = latestUrl;
           button.removeAttribute("download");
@@ -172,7 +172,7 @@
       } catch (_) {}
     } catch (_) {
       countNode.textContent = "—";
-      if (noteNode) noteNode.textContent = "تعذر قراءة إحصائية التنزيل الآن؛ رابط APK المحلي يبقى متاحًا.";
+      if (noteNode) noteNode.textContent = "تعذر قراءة إحصائية GitHub الآن؛ رابط التنزيل الاحتياطي من الموقع يبقى متاحًا.";
     }
   }
 

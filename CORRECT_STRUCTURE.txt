@@ -3,6 +3,7 @@ CORRECT STRUCTURE
 faswad.github.io/
 ├── index.html                  Personal website
 ├── assets/                     Personal website files
+├── .github/workflows/          GitHub Release publishing workflow
 ├── salat/
 │   ├── index.html              Salat website
 │   ├── terms.html
@@ -14,5 +15,6 @@ faswad.github.io/
 │       └── downloads/
 └── .nojekyll
 
-The personal website only links to /salat/.
-The APK download is only inside /salat/.
+The personal website links to /salat/.
+The current APK is stored in /salat/assets/downloads/ as a local fallback.
+The primary download path uses GitHub Releases so GitHub can report release-asset download counts.
