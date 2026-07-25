@@ -43,7 +43,7 @@
   }
 
   $$("[data-version]").forEach((node) => {
-    node.textContent = config.version || "1.0.0";
+    node.textContent = config.version || "1.0.1";
   });
 
   $$("[data-build]").forEach((node) => {
@@ -105,4 +105,77 @@
   } else {
     $$(".reveal").forEach((node) => node.classList.add("is-visible"));
   }
+
+
+  async function refreshReleaseDownloadStats() {
+    const countNode = $("[data-download-count]");
+    const noteNode = $("[data-download-count-note]");
+    if (!countNode || !config.githubRepo) return;
+
+    const cacheKey = `salat-fm-download-count:${config.githubRepo}`;
+    try {
+      const cachedRaw = sessionStorage.getItem(cacheKey);
+      if (cachedRaw) {
+        const cached = JSON.parse(cachedRaw);
+        if (Date.now() - cached.savedAt < 15 * 60 * 1000) {
+          countNode.textContent = new Intl.NumberFormat("ar-IQ").format(cached.count);
+          if (cached.latestUrl) {
+            $$(".js-apk-download").forEach((button) => {
+              button.href = cached.latestUrl;
+              button.removeAttribute("download");
+            });
+          }
+          if (noteNode) noteNode.textContent = cached.note;
+          return;
+        }
+      }
+    } catch (_) {}
+
+    try {
+      const response = await fetch(`https://api.github.com/repos/${config.githubRepo}/releases?per_page=100`, {
+        headers: {
+          "Accept": "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2026-03-10"
+        }
+      });
+      if (!response.ok) throw new Error(`GitHub API ${response.status}`);
+
+      const releases = await response.json();
+      const assetName = config.releaseAssetName || config.apkFileName;
+      let total = 0;
+      let latestUrl = "";
+
+      for (const release of releases) {
+        if (release.draft) continue;
+        for (const asset of release.assets || []) {
+          if (asset.name !== assetName) continue;
+          total += Number(asset.download_count || 0);
+          if (!latestUrl) latestUrl = asset.browser_download_url || "";
+        }
+      }
+
+      const note = latestUrl
+        ? "العدد من GitHub Releases ويجمع تنزيلات ملف APK المنشور عبر الإصدارات."
+        : "لم يُنشر APK عبر GitHub Releases بعد؛ التنزيلات القديمة من ملف Pages الثابت لا يمكن استرجاع عددها.";
+      countNode.textContent = new Intl.NumberFormat("ar-IQ").format(total);
+      if (noteNode) noteNode.textContent = note;
+
+      if (latestUrl) {
+        $$(".js-apk-download").forEach((button) => {
+          button.href = latestUrl;
+          button.removeAttribute("download");
+        });
+      }
+
+      try {
+        sessionStorage.setItem(cacheKey, JSON.stringify({ count: total, latestUrl, note, savedAt: Date.now() }));
+      } catch (_) {}
+    } catch (_) {
+      countNode.textContent = "—";
+      if (noteNode) noteNode.textContent = "تعذر قراءة إحصائية التنزيل الآن؛ رابط APK المحلي يبقى متاحًا.";
+    }
+  }
+
+  refreshReleaseDownloadStats();
+
 })();

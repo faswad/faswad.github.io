@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#050c16">
   <meta name="description" content="تطبيق Android مجاني لمواقيت الصلاة والإقامة للمساجد والهواتف، مع الأذان والتنبيهات في الخلفية بعد إعادة التشغيل، العد التنازلي، شريط الأحاديث، الأذكار، الطقس، وملفات CSV.">
   <meta name="author" content="الدكتور فراس اسود العبادي">
-  <meta property="og:title" content="Salat_FM 1.0.0 — الإصدار الرسمي الأول">
-  <meta property="og:description" content="تطبيق مجاني ووقف خيري للمساجد والهواتف، مع الأذان في الخلفية ومواقيت الإقامة وشريط الأحاديث والأذكار.">
+  <meta property="og:title" content="Salat_FM 1.0.1 — تحديث القبلة والـWidget ونسخة PWA">
+  <meta property="og:description" content="Salat_FM 1.0.1 تطبيق مجاني ووقف خيري للمساجد والهواتف، مع مواقيت الصلاة والإقامة والأذان وبوصلة القبلة وWidget Android ونسخة PWA.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://faswad.github.io/salat/">
   <meta property="og:image" content="https://faswad.github.io/salat/assets/images/social-preview.jpg">
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/style-wide.css?v=14">
-  <title>Salat_FM 1.0.0 | الإصدار الرسمي الأول وتنزيل APK</title>
+  <title>Salat_FM 1.0.1 | تحديث القبلة والـWidget وتنزيل APK وPWA</title>
 </head>
 <body>
   <a class="skip-link" href="#mainContent">انتقل إلى المحتوى الرئيسي</a>
@@ -43,8 +43,11 @@
         <a href="#features">المزايا</a>
         <a href="#gallery">صور التطبيق</a>
         <a href="#themes">الثيمات</a>
+        <a href="#whats-new">الجديد في 1.0.1</a>
+        <a href="#pwa">نسخة الويب</a>
         <a href="#csv-template">نموذج CSV</a>
         <a href="#download">التنزيل</a>
+        <a href="app/">نسخة PWA</a>
         <a href="#install">التثبيت</a>
         <a href="#device-help">إعداد الجهاز</a>
         <a href="#faq">الأسئلة</a>
@@ -57,7 +60,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="hero-badge">Salat_FM 1.0.0 · الإصدار الرسمي الأول</span>
+          <span class="hero-badge">Salat_FM 1.0.1 · تحديث القبلة والـWidget</span>
 
           <h1>
             شاشة مواقيت الصلاة
@@ -84,6 +87,8 @@
             </a>
 
             <a class="button button-secondary" href="#gallery">عرض صور التطبيق</a>
+
+            <a class="button button-secondary pwa-launch-button" href="app/">تشغيل نسخة PWA</a>
           </div>
 
           <div class="hero-meta" aria-label="معلومات سريعة">
@@ -131,32 +136,89 @@
       <div class="container">
         <div class="latest-release-panel reveal">
           <div class="latest-release-copy">
-            <p class="section-kicker">الإصدار الرسمي الأول · Salat_FM 1.0.0</p>
-            <h2>النسخة الرسمية الأولى لخدمة المساجد والهواتف</h2>
+            <p class="section-kicker">الإصدار الحالي · Salat_FM 1.0.1 · البناء 2</p>
+            <h2>تحديث القبلة والـWidget مع تحسينات الثبات</h2>
             <p>
-              يمثل Salat_FM 1.0.0 الإصدار الرسمي الأول من التطبيق، ويجمع بين وضوح شاشة المسجد
-              وسهولة الاستخدام على الهاتف، مع الأذان والتنبيهات والجدولة الأسبوعية والطقس التلقائي.
+              Salat_FM 1.0.1 هو التحديث الحالي بعد الإصدار الرسمي الأول 1.0.0.
+              يضيف بوصلة اتجاه القبلة للهواتف، وWidget ديناميكيًا لشاشة Android الرئيسية،
+              إلى جانب تحسينات في الاعتمادية والإعدادات وتجربة الاستخدام.
             </p>
           </div>
           <div class="latest-release-grid">
             <article>
-              <strong>مصمم للمساجد أولًا</strong>
-              <span>واجهة أفقية واضحة من مسافة بعيدة، مع وضع مستقل للهواتف والشاشات العمودية.</span>
+              <strong>بوصلة اتجاه القبلة</strong>
+              <span>صفحة مخصصة لتحديد اتجاه القبلة على الهاتف في الوضع العمودي، مع استجابة محسنة لحساسات Android.</span>
             </article>
             <article>
-              <strong>أذان مناسب لحالة التطبيق</strong>
-              <span>أذان كامل عند عمل التطبيق، وصوت قصير موثوق من Android عند إغلاقه بالكامل.</span>
+              <strong>Widget ديناميكي للصلاة</strong>
+              <span>حجم صغير ومتوسط يعرض الصلاة القادمة والعد التنازلي، ثم عداد الإقامة ومواقيت الصلوات اليومية.</span>
             </article>
             <article>
-              <strong>أسبوع متجدد تلقائيًا</strong>
-              <span>تخزين وجدولة الأيام السبعة القادمة وإضافة يوم جديد تلقائيًا كل يوم.</span>
+              <strong>نسخة PWA قابلة للتثبيت</strong>
+              <span>نسخة ويب للهاتف وiPhone تعمل من الموقع ويمكن إضافتها إلى الشاشة الرئيسية دون متجر تطبيقات.</span>
             </article>
             <article>
-              <strong>طقس تلقائي سريع</strong>
-              <span>يبدأ بعنوان IP ثم GPS عند الحاجة، ويستخدم الموصل كخيار احتياطي.</span>
+              <strong>ثبات وتجربة استخدام أفضل</strong>
+              <span>تحسينات في جدولة الصلاة والصوت، وإدارة الحالة والإعدادات والنسخ الاحتياطي وإعادة الضبط.</span>
             </article>
           </div>
         </div>
+      </div>
+    </section>
+
+    
+    <section id="whats-new" class="section section-soft">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">ما الجديد؟</p>
+          <h2 class="section-title">الجديد في Salat_FM 1.0.1</h2>
+          <p class="section-description">
+            إصدار 1.0.1 (البناء 2) يركز على الهاتف وسهولة الوصول إلى مواقيت الصلاة واتجاه القبلة،
+            مع الحفاظ على وظائف شاشة المسجد الموجودة في الإصدار السابق.
+          </p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🧭</div>
+            <h3>معرفة اتجاه القبلة</h3>
+            <p>إضافة بوصلة قبلة كاملة للهواتف في الوضع العمودي، مع مؤشر اتجاه واضح وتنبيه عند محاذاة الهاتف مع القبلة.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">◫</div>
+            <h3>Widget لشاشة Android الرئيسية</h3>
+            <p>Widget صغير ومتوسط يعرض الصلاة القادمة والوقت المتبقي، ويتحول بعد الأذان إلى عداد الإقامة، مع عرض الصلوات الخمس في الحجم المتوسط.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>استجابة أسرع للبوصلة على Android</h3>
+            <p>تحسين قراءة اتجاه الهاتف على Android باستخدام مسار أصلي أسرع للحساسات مع الإبقاء على واجهة القبلة نفسها.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">↻</div>
+            <h3>اعتمادية أفضل للصلاة والتنبيهات</h3>
+            <p>تحسينات في جدولة أحداث الصلاة، التعامل مع تغييرات الوقت والمنطقة الزمنية وإعادة التشغيل، ومنع تشغيل صوت متأخر بعد انتهاء وقته.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">☑</div>
+            <h3>مركز حالة وإدارة أفضل</h3>
+            <p>تحسين فحص جاهزية التطبيق وخيارات الصيانة، مع دعم النسخ الاحتياطي والاستعادة وإعادة الإعدادات إلى الوضع الافتراضي.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">PWA</div>
+            <h3>نسخة ويب للهاتف وiPhone</h3>
+            <p>إضافة نسخة PWA منفصلة قابلة للتثبيت من الموقع لعرض المواقيت والعد التنازلي والطقس والإعدادات الأساسية دون متجر تطبيقات.</p>
+          </article>
+        </div>
+
+        <p class="section-description reveal" style="margin-top:24px">
+          ملاحظة: نسخة PWA خيار ويب مستقل، وليست بديلًا كاملًا عن تطبيق Android الأصلي في الأذان بالخلفية أو Widget النظام.
+        </p>
       </div>
     </section>
 
@@ -397,14 +459,47 @@
       </div>
     </section>
 
+    <section id="pwa" class="section pwa-section">
+      <div class="container">
+        <div class="pwa-panel reveal">
+          <div class="pwa-copy">
+            <p class="section-kicker">نسخة ويب قابلة للتثبيت</p>
+            <h2 class="section-title">Salat_FM PWA للهاتف وiPhone</h2>
+            <p class="section-description">
+              يمكن تشغيل نسخة PWA مباشرة من المتصفح وإضافتها إلى الشاشة الرئيسية دون متجر تطبيقات.
+              تعرض مواقيت الصلاة والإقامة والعد التنازلي والطقس، وتحفظ إعداداتها الأساسية على هذا الجهاز.
+            </p>
+            <div class="pwa-actions">
+              <a class="button button-primary" href="app/">فتح نسخة PWA</a>
+              <a class="button button-secondary" href="#pwa-install">طريقة التثبيت</a>
+            </div>
+          </div>
+          <div class="pwa-points">
+            <article><strong>iPhone</strong><span>Safari ← مشاركة ← إضافة إلى الشاشة الرئيسية</span></article>
+            <article><strong>Android</strong><span>Chrome ← تثبيت التطبيق أو إضافة إلى الشاشة الرئيسية</span></article>
+            <article><strong>بدون متجر</strong><span>النسخة تعمل مباشرة من الموقع ويمكن تحديثها من GitHub Pages.</span></article>
+          </div>
+        </div>
+
+        <div id="pwa-install" class="pwa-install-note reveal">
+          <strong>ملاحظة عن العمل بالخلفية</strong>
+          <p>
+            PWA ليست مطابقة للتطبيق الأصلي في التنبيهات والصوت بالخلفية. الأذان والتنبيهات الدقيقة عند
+            إغلاق التطبيق تحتاج Web Push وخدمة إرسال مستقلة؛ GitHub Pages يستضيف الملفات الثابتة فقط.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="download" class="section">
       <div class="container download-grid">
         <article class="download-card reveal">
           <p class="section-kicker">التنزيل الرسمي</p>
           <h2>حمّل تطبيق Android بصيغة APK</h2>
           <p>
-            نزّل النسخة الرسمية الموقعة مباشرة من هذا الموقع، وتجنب النسخ المعدلة
-            أو الملفات التي تحمل اسمًا مختلفًا من مصادر غير موثوقة.
+            نزّل Salat_FM 1.0.1 مباشرة من هذا الموقع. يتضمن هذا الإصدار بوصلة اتجاه القبلة
+            وWidget لشاشة Android الرئيسية، إلى جانب تحسينات الاعتمادية وتجربة الاستخدام.
+            تجنب النسخ المعدلة أو الملفات التي تحمل اسمًا مختلفًا من مصادر غير موثوقة.
           </p>
 
           <p class="download-city-note">
@@ -415,19 +510,19 @@
           <dl class="download-meta">
             <div class="meta-row">
               <dt>الإصدار</dt>
-              <dd data-version>1.0.0</dd>
+              <dd data-version>1.0.1</dd>
             </div>
             <div class="meta-row">
               <dt>الحالة</dt>
-              <dd>الإصدار الرسمي الأول</dd>
+              <dd>الإصدار الحالي · تحديث القبلة والـWidget</dd>
             </div>
             <div class="meta-row">
               <dt>رقم البناء</dt>
-              <dd data-build>1</dd>
+              <dd data-build>2</dd>
             </div>
             <div class="meta-row">
               <dt>التوقيع</dt>
-              <dd>Release رسمي · APK Signature Scheme v2</dd>
+              <dd>Release APK</dd>
             </div>
             <div class="meta-row">
               <dt>النظام</dt>
@@ -439,13 +534,21 @@
             </div>
             <div class="meta-row">
               <dt>الحجم</dt>
-              <dd data-apk-size>34.8 MB</dd>
+              <dd data-apk-size>28.6 MB</dd>
             </div>
             <div class="meta-row">
               <dt>SHA-256</dt>
-              <dd data-apk-sha>7ac9a47cb4c3dcdf24f126ed82d52bfb8fa2f5b896ef390e1e630fffd9db74c9</dd>
+              <dd data-apk-sha>0d536fa141c35c03ce28fc4618f5762d03c133415bd1ae5cc6f830f9cc113294</dd>
             </div>
           </dl>
+
+          <div class="download-counter" data-download-counter>
+            <span>إجمالي تنزيلات APK عبر GitHub Releases</span>
+            <strong data-download-count>—</strong>
+            <small data-download-count-note>
+              يظهر العداد بعد نشر APK كملف ضمن GitHub Releases.
+            </small>
+          </div>
 
           <div class="download-actions">
             <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
