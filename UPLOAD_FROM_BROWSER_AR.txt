@@ -1,11 +1,9 @@
-طريقة رفع التحديث من المتصفح
+رفع الموقع وAPK من المتصفح فقط
 
-1. افتح مستودع faswad/faswad.github.io والفرع main.
-2. ارفع ملفات هذه الحزمة مع الحفاظ على المسارات نفسها.
-3. تأكد خصوصًا من رفع salat/assets/downloads/firas-prayer-display.apk وملفات الموقع المعدلة ومجلد .github/workflows.
-4. اضغط Commit changes.
-5. انتظر اكتمال GitHub Pages وWorkflow نشر Salat APK.
-6. افتح https://faswad.github.io/salat/ وتأكد أن الإصدار 1.0.1 والبناء 2 لم يتغيرا.
-7. اختبر زر التنزيل وعدّاد GitHub Releases.
-
-ملاحظة: رفع الملفات من المتصفح لا يرفع مجلد .git نفسه؛ المطلوب هو محتويات المشروع فقط.
+1) افتح مستودع faswad/faswad.github.io في GitHub وسجّل الدخول مع التحقق الثنائي.
+2) ارفع ملفات الموقع الجديدة عبر Add file > Upload files. لا تحاول رفع APK من صفحة Code إذا تجاوز حد الرفع للملف.
+3) لرفع APK: افتح Releases > Draft a new release.
+4) استخدم Tag جديدًا يميز إعادة نشر نفس البناء، مثل salat-1.0.1-build2-r2، من دون تغيير إصدار التطبيق أو البناء داخله.
+5) اجعل اسم Release واضحًا: Salat_FM 1.0.1 Build 2 — APK Refresh.
+6) أرفق الملف باسم firas-prayer-display.apk واجعل الـ Release هو Latest ثم Publish release.
+7) الموقع سيبحث تلقائيًا عن firas-prayer-display.apk في Latest Release، ويستخدمه للتنزيل ويعرض مجموع تنزيلات APK الرسمية من GitHub Releases.

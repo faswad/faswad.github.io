@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#050c16">
-  <meta name="description" content="تطبيق Android مجاني لمواقيت الصلاة والإقامة للمساجد والهواتف، مع الأذان والتنبيهات في الخلفية بعد إعادة التشغيل، العد التنازلي، شريط الأحاديث، الأذكار، الطقس، وملفات CSV.">
+  <meta name="description" content="تطبيق Android مجاني للمساجد والهواتف يعرض مواقيت الصلاة والإقامة، مع الأذان والتنبيهات، البوصلة، الطقس، النسخ الاحتياطي، شاشة المسجد، وملفات CSV.">
   <meta name="author" content="الدكتور فراس اسود العبادي">
-  <meta property="og:title" content="Salat_FM 1.0.1 — تحديث القبلة والـWidget وتحسين تشغيل شاشة المسجد">
-  <meta property="og:description" content="Salat_FM 1.0.1 تطبيق مجاني ووقف خيري للمساجد والهواتف، مع مواقيت الصلاة والإقامة والأذان وبوصلة القبلة وWidget Android وتحسينات الإقلاع لشاشات المسجد.">
+  <meta property="og:title" content="Salat_FM 1.0.1 — تحديث الموثوقية والدعم">
+  <meta property="og:description" content="تطبيق مجاني ووقف خيري للمساجد والهواتف، مع البوصلة والأذان في الخلفية ومواقيت الإقامة والطقس وشاشة المسجد.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://faswad.github.io/salat/">
   <meta property="og:image" content="https://faswad.github.io/salat/assets/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
-  <link rel="stylesheet" href="assets/css/style-wide.css?v=14">
-  <title>Salat_FM 1.0.1 | تحديث القبلة والـWidget وتنزيل APK</title>
+<link rel="stylesheet" href="assets/css/style-wide.css?v=16">
+  <title>Salat_FM 1.0.1 | تحديث الموثوقية والدعم</title>
 </head>
 <body>
   <a class="skip-link" href="#mainContent">انتقل إلى المحتوى الرئيسي</a>
@@ -42,9 +42,11 @@
         <a href="#features">المزايا</a>
         <a href="#gallery">صور التطبيق</a>
         <a href="#themes">الثيمات</a>
-        <a href="#whats-new">الجديد في 1.0.1</a>
         <a href="#csv-template">نموذج CSV</a>
-        <a href="#download">التنزيل</a>
+        <a href="#download">الإصدار</a>
+        <a href="#changes">التغييرات</a>
+        <a href="#known-issues">المشكلات المعروفة</a>
+        <a href="#support">الدعم</a>
         <a href="#install">التثبيت</a>
         <a href="#device-help">إعداد الجهاز</a>
         <a href="#faq">الأسئلة</a>
@@ -57,7 +59,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="hero-badge">Salat_FM 1.0.1 · تحديث القبلة والـWidget</span>
+          <span class="hero-badge">Salat_FM 1.0.1 · تحديث الموثوقية والدعم</span>
 
           <h1>
             شاشة مواقيت الصلاة
@@ -71,12 +73,13 @@
           <p class="hero-description">
             صُمّم التطبيق أولًا ليكون شاشة واضحة ومتكاملة للمساجد، ثم طُوّر ليعمل
             بكفاءة على الهواتف والأجهزة اللوحية والتلفاز وAndroid TV Box. يعرض أوقات
-            الصلاة والإقامة والعدّ التنازلي والطقس وشريط الأحاديث، مع جدولة أسبوعية
-            متجددة للأذان والتنبيهات حتى بعد إغلاق التطبيق أو إعادة تشغيل الجهاز.
+            الصلاة والإقامة والعدّ التنازلي والطقس وشريط الأحاديث، مع بوصلة مدمجة
+            ونسخ احتياطي وتشخيص لحالة التطبيق، وجدولة أسبوعية متجددة للأذان والتنبيهات
+            واستعادة وضع شاشة المسجد بعد إعادة تشغيل الجهاز بحسب إمكانات Android والجهاز.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
+            <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
               <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3ZM5 19h14v2H5v-2Z"/>
               </svg>
@@ -84,7 +87,6 @@
             </a>
 
             <a class="button button-secondary" href="#gallery">عرض صور التطبيق</a>
-
           </div>
 
           <div class="hero-meta" aria-label="معلومات سريعة">
@@ -93,6 +95,7 @@
             <span>أذان وتنبيهات موثوقة</span>
             <span>هاتف وتلفاز وAndroid TV Box</span>
             <span>واجهتان عمودية وأفقية</span>
+            <span>بوصلة مدمجة على الأجهزة المدعومة</span>
           </div>
         </div>
 
@@ -118,9 +121,10 @@
             <h2>ملاحظة مهمة قبل استخدام التطبيق</h2>
             <p>
               عند تثبيت التطبيق لأول مرة تكون <strong>مواقيت مدينة الموصل</strong>
-              مضبوطة افتراضيًا. لاستخدام التطبيق في مدينة أخرى، جهّز ملف
-              <strong>CSV</strong> يحتوي على المواقيت الصحيحة لمدينتك، ثم ارفعه
+              مضبوطة افتراضيًا. لاستخدام التطبيق في مدينة عراقية أخرى، جهّز ملف
+              <strong>CSV</strong> يحتوي على المواقيت الصحيحة لمدينتك داخل العراق، ثم ارفعه
               من إعدادات التطبيق. يُنصح بمراجعة جميع المواقيت قبل اعتمادها في المسجد.
+              التطبيق مخصص لمدن العراق ويعتمد المنطقة الزمنية <strong>Asia/Baghdad</strong>.
             </p>
             <a href="#csv-template">الانتقال إلى نموذج ملف CSV</a>
           </div>
@@ -132,86 +136,23 @@
       <div class="container">
         <div class="latest-release-panel reveal">
           <div class="latest-release-copy">
-            <p class="section-kicker">الإصدار الحالي · Salat_FM 1.0.1 · البناء 2</p>
-            <h2>تحديث القبلة والـWidget مع تحسينات الإقلاع والثبات</h2>
+            <p class="section-kicker">أحدث بناء · Salat_FM 1.0.1 · Build 2</p>
+            <h2>شاشة مسجد أكثر اعتمادية، مع بوصلة وتشخيص واستعادة</h2>
             <p>
-              Salat_FM 1.0.1 هو التحديث الحالي بعد الإصدار الرسمي الأول 1.0.0.
-              يضيف بوصلة اتجاه القبلة للهواتف، وWidget ديناميكيًا لشاشة Android الرئيسية،
-              إلى جانب تحسينات في الاعتمادية والإعدادات وتجربة الاستخدام وتشغيل شاشة المسجد بعد الإقلاع.
+              يحافظ هذا الملف على الإصدار <strong>1.0.1</strong> والبناء <strong>2</strong>، ويجمع أحدث تحسينات
+              شاشة المسجد مع البوصلة المدمجة، الاستعادة بعد الإقلاع، النسخ الاحتياطي، مركز الحالة،
+              والتحقق المحسن من ملفات المواقيت، من دون تغيير رقم الإصدار أو البناء.
             </p>
           </div>
           <div class="latest-release-grid">
-            <article>
-              <strong>بوصلة اتجاه القبلة</strong>
-              <span>صفحة مخصصة لتحديد اتجاه القبلة على الهاتف في الوضع العمودي، مع استجابة محسنة لحساسات Android.</span>
-            </article>
-            <article>
-              <strong>Widget ديناميكي للصلاة</strong>
-              <span>حجم صغير ومتوسط يعرض الصلاة القادمة والعد التنازلي، ثم عداد الإقامة ومواقيت الصلوات اليومية.</span>
-            </article>
-            <article>
-              <strong>إقلاع أسرع لشاشة المسجد</strong>
-              <span>مسار تشغيل مبكر لوضع المسجد مع Direct Boot ومحاولات احتياطية قصيرة لاستعادة الشاشة بعد إعادة التشغيل.</span>
-            </article>
-            <article>
-              <strong>ثبات وتجربة استخدام أفضل</strong>
-              <span>تحسينات في جدولة الصلاة والصوت، وإدارة الحالة والإعدادات والنسخ الاحتياطي وإعادة الضبط.</span>
-            </article>
+            <article><strong>بوصلة مدمجة</strong><span>قراءة اتجاه الجهاز عبر حساس البوصلة في الهواتف والأجهزة التي تدعم المستشعر المطلوب.</span></article>
+            <article><strong>استعادة شاشة المسجد</strong><span>مسار إقلاع مبكر ومحاولات استعادة قصيرة للمساعدة على عودة شاشة المسجد بعد تشغيل الجهاز.</span></article>
+            <article><strong>مركز حالة وتشخيص</strong><span>فحص الأذونات والمنبهات والبطارية والمنطقة الزمنية مع تقرير دعم محلي قابل للنسخ.</span></article>
+            <article><strong>نسخ احتياطي واستعادة</strong><span>حفظ الإعدادات والملفات المخصصة واستعادتها مع الاحتفاظ بآخر ملف مواقيت سليم.</span></article>
+            <article><strong>أذان وتنبيهات موثوقة</strong><span>جدولة متجددة في الخلفية مع أدوات اختبار للصوت والمنبه قبل اعتماد الجهاز.</span></article>
+            <article><strong>طقس وCSV محلي</strong><span>طقس تلقائي عبر IP أو GPS، بينما تبقى مواقيت الصلاة من ملف CSV المحلي المعتمد.</span></article>
           </div>
         </div>
-      </div>
-    </section>
-
-    
-    <section id="whats-new" class="section section-soft">
-      <div class="container">
-        <header class="section-header reveal">
-          <p class="section-kicker">ما الجديد؟</p>
-          <h2 class="section-title">الجديد في Salat_FM 1.0.1</h2>
-          <p class="section-description">
-            إصدار 1.0.1 (البناء 2) يركز على الهاتف وسهولة الوصول إلى مواقيت الصلاة واتجاه القبلة،
-            مع الحفاظ على وظائف شاشة المسجد الموجودة في الإصدار السابق.
-          </p>
-        </header>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">🧭</div>
-            <h3>معرفة اتجاه القبلة</h3>
-            <p>إضافة بوصلة قبلة كاملة للهواتف في الوضع العمودي، مع مؤشر اتجاه واضح وتنبيه عند محاذاة الهاتف مع القبلة.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">◫</div>
-            <h3>Widget لشاشة Android الرئيسية</h3>
-            <p>Widget صغير ومتوسط يعرض الصلاة القادمة والوقت المتبقي، ويتحول بعد الأذان إلى عداد الإقامة، مع عرض الصلوات الخمس في الحجم المتوسط.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">⚡</div>
-            <h3>استجابة أسرع للبوصلة على Android</h3>
-            <p>تحسين قراءة اتجاه الهاتف على Android باستخدام مسار أصلي أسرع للحساسات مع الإبقاء على واجهة القبلة نفسها.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">↻</div>
-            <h3>اعتمادية أفضل للصلاة والتنبيهات</h3>
-            <p>تحسينات في جدولة أحداث الصلاة، التعامل مع تغييرات الوقت والمنطقة الزمنية وإعادة التشغيل، ومنع تشغيل صوت متأخر بعد انتهاء وقته.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">☑</div>
-            <h3>مركز حالة وإدارة أفضل</h3>
-            <p>تحسين فحص جاهزية التطبيق وخيارات الصيانة، مع دعم النسخ الاحتياطي والاستعادة وإعادة الإعدادات إلى الوضع الافتراضي.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon" aria-hidden="true">TV</div>
-            <h3>استعادة شاشة المسجد بعد الإقلاع</h3>
-            <p>تحسين بدء التشغيل على Android TV وFire TV وAndroid Box عبر مسار مبكر لوضع المسجد، مع إبقاء محاولات الاستعادة القصيرة كخطة احتياطية.</p>
-          </article>
-        </div>
-
       </div>
     </section>
 
@@ -265,13 +206,13 @@
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">°C</div>
             <h3>طقس تلقائي سريع</h3>
-            <p>يعتمد تلقائيًا على IP ثم GPS ثم مدينة الموصل، مع إمكان تحديد موقع ثابت من الإعدادات.</p>
+            <p>يحدد الطقس تقريبياً عبر IP باستخدام ipwho.is وipapi.co، ثم GPS المصرح به، ثم الموصل؛ وتُجلب بيانات الطقس من Open-Meteo.</p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">▦</div>
             <h3>ملف مواقيت CSV</h3>
-            <p>استيراد ملف سنوي خاص بأي مدينة، مع مواقيت مدينة الموصل مضبوطة افتراضيًا.</p>
+            <p>استيراد ملف سنوي خاص بمدينة عراقية، مع اعتماد Asia/Baghdad ومواقيت الموصل افتراضيًا.</p>
           </article>
 
           <article class="feature-card reveal">
@@ -290,6 +231,24 @@
             <div class="feature-icon" aria-hidden="true">⏻</div>
             <h3>وضع شاشة المسجد</h3>
             <p>تشغيل مخصص لأجهزة العرض وAndroid TV مع دعم الاستئناف بعد تشغيل الجهاز بحسب نظامه.</p>
+          </article>
+
+          <article class="feature-card reveal feature-card-highlight">
+            <div class="feature-icon" aria-hidden="true">⌖</div>
+            <h3>بوصلة مدمجة</h3>
+            <p>عرض اتجاه الجهاز عبر مستشعر البوصلة في الأجهزة المدعومة، مع بقاء بقية وظائف التطبيق مستقلة عنها.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">✓</div>
+            <h3>مركز حالة التطبيق</h3>
+            <p>فحص واضح للأذونات والمنبه الدقيق والبطارية والمنطقة الزمنية وملف المواقيت، مع تقرير دعم محلي.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">↺</div>
+            <h3>نسخ احتياطي واستعادة</h3>
+            <p>نسخة احتياطية للإعدادات والملفات المخصصة، مع إمكانية الرجوع إلى آخر ملف مواقيت سليم عند الحاجة.</p>
           </article>
 
           <article class="feature-card reveal">
@@ -347,10 +306,10 @@
 
         <figure class="themes-overview-card reveal">
           <button class="image-zoom themes-image-button" type="button"
-                  data-image="assets/images/salat-fm-10-themes.png"
+                  data-image="assets/images/salat-fm-10-themes.webp"
                   data-alt="عشرة ثيمات متنوعة لتطبيق Salat_FM"
                   data-caption="عشرة ثيمات لونية متنوعة متاحة داخل Salat_FM">
-            <img src="assets/images/salat-fm-10-themes.png"
+            <img src="assets/images/salat-fm-10-themes.webp"
                  alt="صورة تجمع عشرة ثيمات متنوعة لتطبيق Salat_FM"
                  loading="lazy">
           </button>
@@ -390,7 +349,7 @@
           <h2 class="section-title">حمّل ملف CSV جاهزًا أو استخدمه كنموذج</h2>
           <p class="section-description">
             التطبيق يأتي بمواقيت مدينة الموصل افتراضيًا. الملف المرفق يحتوي على مواقيت
-            الموصل لمدة سنة كاملة، ويمكن استخدام بنيته لإنشاء ملف خاص بمدينة أخرى،
+            الموصل لمدة سنة كاملة، ويمكن استخدام بنيته لإنشاء ملف خاص بمدينة عراقية أخرى،
             ثم رفع الملف من إعدادات التطبيق بعد مراجعة المواقيت بدقة.
           </p>
         </header>
@@ -452,119 +411,143 @@
       </div>
     </section>
 
+
     <section id="download" class="section">
       <div class="container download-grid">
         <article class="download-card reveal">
-          <p class="section-kicker">التنزيل الرسمي</p>
-          <h2>حمّل تطبيق Android بصيغة APK</h2>
+          <p class="section-kicker">الإصدار الحالي</p>
+          <h2>Salat_FM 1.0.1</h2>
           <p>
-            نزّل Salat_FM 1.0.1 رسميًا عبر GitHub Releases، مع إبقاء نسخة مطابقة داخل الموقع كنسخة احتياطية. يتضمن هذا الإصدار بوصلة اتجاه القبلة
-            وWidget لشاشة Android الرئيسية، إلى جانب تحسينات الاعتمادية وتجربة الاستخدام.
-            تجنب النسخ المعدلة أو الملفات التي تحمل اسمًا مختلفًا من مصادر غير موثوقة.
+            الملف الرسمي الحالي من Salat_FM 1.0.1 Build 2، ويتضمن البوصلة، تحسين استعادة شاشة المسجد بعد الإقلاع،
+            مركز الحالة، تقرير الدعم، النسخ الاحتياطي والاستعادة، والتحقق المتقدم من ملف المواقيت.
           </p>
 
-          <p class="download-city-note">
-            <strong>الإعداد الافتراضي:</strong>
-            مواقيت مدينة الموصل. يمكن تغييرها لأي مدينة برفع ملف CSV من إعدادات التطبيق.
-          </p>
+          <div class="release-ready-note" role="status">
+            <strong>APK الرسمي جاهز للتنزيل</strong>
+            <span>يمكن التحقق من الملف ببصمة SHA-256 أدناه، ومن هوية التوقيع ببصمة شهادة التوقيع المنشورة بجانبها.</span>
+          </div>
 
           <dl class="download-meta">
-            <div class="meta-row">
-              <dt>الإصدار</dt>
-              <dd data-version>1.0.1</dd>
-            </div>
-            <div class="meta-row">
-              <dt>الحالة</dt>
-              <dd>الإصدار الحالي · تحديث القبلة والـWidget</dd>
-            </div>
-            <div class="meta-row">
-              <dt>رقم البناء</dt>
-              <dd data-build>2</dd>
-            </div>
-            <div class="meta-row">
-              <dt>التوقيع</dt>
-              <dd>Release APK</dd>
-            </div>
-            <div class="meta-row">
-              <dt>النظام</dt>
-              <dd>Android للهواتف والتلفاز والأجهزة الملحقة</dd>
-            </div>
-            <div class="meta-row">
-              <dt>الصيغة</dt>
-              <dd>APK</dd>
-            </div>
-            <div class="meta-row">
-              <dt>الحجم</dt>
-              <dd data-apk-size>30.3 MB</dd>
-            </div>
-            <div class="meta-row">
-              <dt>SHA-256</dt>
-              <dd data-apk-sha>13d5cd4ae9028d0acd464c4878b2a43fa2d77e749548cbee9745e9a96336834d</dd>
-            </div>
+            <div class="meta-row"><dt>الإصدار</dt><dd data-version>1.0.1</dd></div>
+            <div class="meta-row"><dt>رقم البناء</dt><dd data-build>2</dd></div>
+            <div class="meta-row"><dt>تاريخ نشر APK</dt><dd data-release-date>26 يوليو 2026</dd></div>
+            <div class="meta-row"><dt>الحد الأدنى</dt><dd data-min-android>Android 7.0 (API 24)</dd></div>
+            <div class="meta-row"><dt>الحزمة</dt><dd><bdi>com.firas.prayer_displayer</bdi></dd></div>
+            <div class="meta-row"><dt>توقيع APK</dt><dd>APK Signature Scheme v2</dd></div>
+            <div class="meta-row"><dt>بصمة شهادة التوقيع SHA-256</dt><dd class="hash-value" data-cert-sha>44:69:FE:9F:CB:5B:7D:A9:3C:A4:12:32:E8:3E:28:AF:B8:71:AC:4C:89:C0:92:4A:BD:E9:B0:C6:17:DA:A4:8A</dd></div>
+            <div class="meta-row"><dt>حجم APK</dt><dd data-apk-size>31.8 MB (30.3 MiB)</dd></div>
+            <div class="meta-row"><dt>بصمة ملف APK SHA-256</dt><dd class="hash-value" data-apk-sha>13d5cd4ae9028d0acd464c4878b2a43fa2d77e749548cbee9745e9a96336834d</dd></div>
+            <div class="meta-row"><dt>تنزيلات GitHub Releases</dt><dd><span data-download-count>يتم جلب العدد…</span></dd></div>
           </dl>
 
-          <div class="download-counter" data-download-counter>
-            <span>إجمالي تنزيلات APK عبر GitHub Releases</span>
-            <strong data-download-count>—</strong>
-            <small data-download-count-note>
-              يُحدّث العداد تلقائيًا من GitHub Releases ويجمع تنزيلات ملفات Salat_FM المنشورة هناك.
-            </small>
+          <div class="download-actions">
+            <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">تنزيل Salat_FM 1.0.1 · Build 2</a>
+            <a class="button button-secondary" href="assets/downloads/APK_SECURITY.txt" download>معلومات التحقق الأمني</a>
+            <a class="button button-secondary" href="changelog.html">عرض سجل التغييرات</a>
           </div>
 
-          <div class="download-actions">
-            <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
-              تنزيل التطبيق الآن
-            </a>
-            <a class="button button-secondary" href="assets/downloads/firas-prayer-display_SHA256.txt" download>
-              تنزيل بصمة SHA-256
-            </a>
-            <a class="button button-secondary" href="assets/downloads/Salat_FM-1.0.1-build2.apk?v=1.0.1-build2-local" download="Salat_FM-1.0.1-build2.apk">
-              تنزيل احتياطي من الموقع
-            </a>
+          <div class="security-explainer">
+            <h3>ما الفرق بين البصمتين؟</h3>
+            <p><strong>بصمة الملف</strong> تتحقق من أن ملف APK نفسه لم يتغير. أما <strong>بصمة شهادة التوقيع</strong> فتثبت أن الملف موقّع بهوية التوقيع الرسمية نفسها المستخدمة لهذا التطبيق.</p>
           </div>
+
+          <details class="legacy-download">
+            <summary>الإصدار التاريخي 1.0.0</summary>
+            <p>يبقى سجل الإصدار الأول متاحًا في GitHub Releases، ولا يتم تضمين APK القديم داخل حزمة الموقع الجديدة حتى لا يحدث خلط أو يتضاعف حجم التنزيل.</p>
+            <a class="button button-secondary" href="https://github.com/faswad/faswad.github.io/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">فتح إصدار 1.0.0 في GitHub</a>
+          </details>
         </article>
 
         <article id="install" class="install-card reveal">
           <p class="section-kicker">طريقة التثبيت</p>
-          <h2>أربع خطوات بسيطة</h2>
-
+          <h2>خطوات التثبيت الآمن</h2>
           <ol class="install-steps">
-            <li>اضغط زر التنزيل وانتظر اكتمال ملف <bdi>Salat_FM-1.0.1-build2.apk</bdi>.</li>
-            <li>افتح الملف على الهاتف أو الجهاز اللوحي أو التلفاز أو جهاز Android TV Box.</li>
-            <li>اسمح بالتثبيت من هذا المصدر عند طلب Android وأكّد رمز أمان الجهاز عند الحاجة.</li>
-            <li>افتح التطبيق مرة واحدة، راجع المواقيت، واسمح بالتنبيهات والمنبهات الدقيقة عندما يطلب النظام.</li>
+            <li>تأكد أن الملف يحمل رقم الإصدار الصحيح وأن بصمة SHA-256 تطابق البصمة المنشورة.</li>
+            <li>افتح ملف APK على هاتف أو تلفاز يعمل بنظام Android 7.0 أو أحدث.</li>
+            <li>اسمح بالتثبيت من هذا المصدر عند طلب Android، ثم ألغِ السماح بعد التثبيت إن رغبت.</li>
+            <li>شغّل معالج الإعداد الأولي، راجع ملف المواقيت، واختبر الأذان والمنبه من مركز حالة التطبيق.</li>
           </ol>
-
-          <p class="install-security-note">
-            ظهور تحذير «تطبيق من مصدر غير معروف» أمر طبيعي عند تثبيت APK من خارج Google Play.
-            الملف الموجود هنا موقّع رسميًا، ويمكن مقارنة بصمة SHA-256 قبل التثبيت.
-          </p>
+          <p class="install-security-note">تحقق من بصمة ملف APK وبصمة شهادة التوقيع المنشورتين في هذه الصفحة قبل توزيع الملف على أجهزة المسجد.</p>
         </article>
       </div>
     </section>
 
+    <section id="changes" class="section section-soft">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">سجل التغييرات</p>
+          <h2 class="section-title">ما الجديد في Salat_FM 1.0.1؟</h2>
+        </header>
+        <div class="change-grid">
+          <article class="change-card reveal"><h3>البوصلة</h3><p>إضافة بوصلة مدمجة تعتمد على مستشعر الجهاز في الأجهزة التي تدعم هذه الإمكانية.</p></article>
+          <article class="change-card reveal"><h3>إقلاع شاشة المسجد</h3><p>تحسين الاستعادة بعد تشغيل الجهاز بمسار إقلاع مبكر ومحاولات احتياطية قصيرة مع مراعاة قيود الشركة المصنّعة.</p></article>
+          <article class="change-card reveal"><h3>إعداد وتشخيص</h3><p>معالج إعداد أولي، مركز حالة بألوان واضحة، وتقرير دعم محلي يتضمن معلومات الجهاز والحالة.</p></article>
+          <article class="change-card reveal"><h3>الصوت والتنبيهات</h3><p>أدوات لاختبار الأذان والمنبه وإيقاف الصوت، مع جدولة متجددة لمنبهات الصلاة في الخلفية.</p></article>
+          <article class="change-card reveal"><h3>ملف المواقيت</h3><p>معاينة وفحص CSV والتحقق من الأعمدة وترتيب المواقيت مع الاحتفاظ بآخر ملف سليم.</p></article>
+          <article class="change-card reveal"><h3>الحماية والاستعادة</h3><p>نسخ احتياطي واستعادة، HTTPS للمصادر الشبكية المدعومة، وبصمات منشورة للملف وشهادة التوقيع.</p></article>
+        </div>
+        <p class="section-link-line"><a class="button button-secondary" href="changelog.html">صفحة سجل التغييرات الكاملة</a></p>
+      </div>
+    </section>
+
+    <section id="known-issues" class="section">
+      <div class="container">
+        <header class="section-header reveal"><p class="section-kicker">المشكلات المعروفة</p><h2 class="section-title">أمور تعتمد على نوع الجهاز</h2></header>
+        <div class="known-issues-list">
+          <article class="known-issue reveal"><strong>التشغيل التلقائي على التلفاز</strong><p>قد تمنعه بعض الشركات المصنّعة؛ اختبر الجهاز بعد فصل الكهرباء، واستخدم أداة خارجية فقط عند الحاجة.</p></article>
+          <article class="known-issue reveal"><strong>تأخير المنبهات</strong><p>قد يحدث عند تعطيل المنبهات الدقيقة أو تقييد البطارية. يعرض مركز حالة التطبيق هذه المشكلة بوضوح.</p></article>
+          <article class="known-issue reveal"><strong>الطقس التلقائي</strong><p>قد تكون المدينة المقدرة من IP غير دقيقة، لكن ذلك لا يؤثر في مواقيت الصلاة لأنها تأتي من CSV المحلي.</p></article>
+          <article class="known-issue reveal"><strong>البوصلة والمستشعرات</strong><p>تحتاج البوصلة إلى مستشعر مناسب في الجهاز؛ بعض أجهزة التلفاز وTV Box لا تحتوي عليه، ولا يؤثر ذلك في بقية وظائف التطبيق.</p></article>
+          <article class="known-issue reveal"><strong>النطاق الجغرافي</strong><p>الإصدار الحالي مخصص لمدن العراق ويستخدم Asia/Baghdad؛ لا يكفي رفع CSV لدولة ذات منطقة زمنية مختلفة.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section section-soft">
+      <div class="container support-layout">
+        <article class="support-copy reveal">
+          <p class="section-kicker">الدعم والمقترحات</p>
+          <h2>أرسل تقريرًا واضحًا عن المشكلة</h2>
+          <p>أنشئ تقرير الدعم من داخل التطبيق، أو املأ النموذج التالي بالجهاز والموديل وإصدار Android. لا يرسل الموقع البيانات تلقائيًا؛ يمكنك نسخ التقرير ثم إرساله بنفسك عبر البريد الإلكتروني. ويمكن أيضًا التواصل عبر حساب واتساب المذكور في الموقع.</p>
+          <a class="button button-secondary" href="mailto:masjidstime@gmail.com">مراسلتنا عبر البريد · masjidstime@gmail.com</a>
+        </article>
+        <form id="supportForm" class="support-form reveal">
+          <label>اسم الجهاز أو الشركة<input id="supportDevice" name="device" required placeholder="مثال: Samsung أو TV Box"></label>
+          <label>الموديل<input id="supportModel" name="model" required placeholder="رقم الموديل كما يظهر في الإعدادات"></label>
+          <label>إصدار Android<input id="supportAndroid" name="android" required placeholder="مثال: Android 14"></label>
+          <label>إصدار Salat_FM<input id="supportAppVersion" name="appVersion" value="1.0.1" required></label>
+          <label>وصف المشكلة<textarea id="supportIssue" name="issue" rows="5" required placeholder="متى ظهرت؟ ما المتوقع؟ وما الذي حدث؟"></textarea></label>
+          <label>خطوات جُرّبت<textarea id="supportTried" name="tried" rows="3" placeholder="مثل إعادة التشغيل أو منح الإذن"></textarea></label>
+          <div class="support-form-actions">
+            <button class="button button-primary" type="submit">نسخ نموذج المشكلة</button>
+            <a class="button button-secondary" href="mailto:masjidstime@gmail.com">فتح البريد الإلكتروني</a>
+          </div>
+          <p id="supportFormStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
 
     <section id="device-help" class="section section-soft">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-kicker">مساعدة في إعداد الجهاز</p>
-          <h2 class="section-title">حلول عملية للتثبيت والتشغيل التلقائي</h2>
+          <p class="section-kicker">الأدوات الخارجية المساعدة</p>
+          <h2 class="section-title">منفصلة بوضوح عن تطبيق Salat_FM الأساسي</h2>
           <p class="section-description">
-            تختلف أجهزة Android TV من شركة إلى أخرى. لذلك قد تحتاج بعض أجهزة التلفاز
-            إلى مدير ملفات لفتح ملف APK، أو إلى تطبيق مساعد لتشغيل شاشة الصلاة تلقائيًا
-            بعد إعادة تشغيل الجهاز.
+            تطبيق <strong>Salat_FM</strong> هو التطبيق الأساسي المعروض في قسم التنزيل. أما
+            <strong>File Commander</strong> و<strong>Launch on Boot</strong> فهما أداتان خارجيتان مستقلتان
+            لا تتبعان Salat_FM، وقد يحتاجهما بعض مستخدمي Android TV فقط لفتح APK أو التشغيل بعد الإقلاع.
           </p>
         </header>
 
         <div class="device-help-grid">
           <article class="device-help-card reveal">
             <div class="device-help-number">01</div>
-            <h3>عندما لا يظهر ملف APK على التلفاز</h3>
+            <span class="external-badge">أداة خارجية مستقلة</span><h3>عندما لا يظهر ملف APK على التلفاز</h3>
             <p>
               ملف APK ربما يحتاج إلى مدير ملفات يستطيع الوصول إلى مجلد التنزيلات
               أو ذاكرة USB وبدء عملية التثبيت. يمكن تثبيت
               <strong>File Commander</strong> من متجر Google Play الخاص بالتلفاز،
-              ثم فتح ملف <bdi>Salat_FM-1.0.1-build2.apk</bdi> من خلاله.
+              ثم فتح ملف <bdi>firas-prayer-display.apk</bdi> من خلاله.
             </p>
             <a class="button button-secondary external-tool-link"
                href="https://play.google.com/store/apps/details?id=com.mobisystems.fileman"
@@ -576,7 +559,7 @@
 
           <article class="device-help-card reveal">
             <div class="device-help-number">02</div>
-            <h3>التشغيل بعد انقطاع الكهرباء</h3>
+            <span class="external-badge">أداة خارجية مستقلة — ليست من Salat_FM</span><h3>التشغيل بعد انقطاع الكهرباء</h3>
             <p>
               صُمم تطبيق شاشة الصلاة ليستأنف التشغيل تلقائيًا بعد عودة الكهرباء،
               لكن بعض أجهزة التلفاز تمنع تشغيل التطبيقات تلقائيًا بسبب قيود الشركة المصنّعة.
@@ -603,7 +586,9 @@
               تم توفير ملف Launch on Boot مباشرة داخل هذا الموقع لتسهيل تثبيته
               على أجهزة التلفاز التي لا يظهر فيها التطبيق داخل المتجر.
               بعد التنزيل، افتح الملف باستخدام مدير الملفات وثبّته، ثم اختر
-              تطبيق شاشة مواقيت الصلاة من داخل Launch on Boot.
+              تطبيق شاشة مواقيت الصلاة من داخل Launch on Boot.<br>
+              <strong>SHA-256 للأداة الخارجية:</strong>
+              <bdi class="hash-value">b23ef3cb77899437af26c61a55b3c7fd5db489819c761d389b41a3fa5fbfb299</bdi>
             </p>
           </article>
 
@@ -681,7 +666,7 @@
             <summary>على أي أجهزة يعمل التطبيق؟</summary>
             <p>
               صُمم التطبيق للعمل على مختلف أجهزة Android، بما في ذلك الهواتف والأجهزة اللوحية
-              وأجهزة التلفاز الذكية وأجهزة Android TV Box والأجهزة الملحقة، بشرط أن يسمح الجهاز
+              وأجهزة التلفاز الذكية وأجهزة Android TV Box والأجهزة الملحقة، ويبدأ الدعم من <strong>Android 7.0 (API 24)</strong>، بشرط أن يسمح الجهاز
               بتثبيت ملفات APK وتشغيل تطبيقات Android.
             </p>
           </details>
@@ -712,6 +697,11 @@
           </details>
 
           <details class="reveal">
+            <summary>هل تعمل البوصلة على كل هاتف أو تلفاز؟</summary>
+            <p>تعمل البوصلة عندما يوفر الجهاز المستشعر المطلوب. بعض أجهزة Android TV وTV Box لا تحتوي على مستشعر بوصلة، وفي هذه الحالة تبقى مواقيت الصلاة والأذان والطقس وبقية وظائف Salat_FM متاحة بشكل طبيعي.</p>
+          </details>
+
+          <details class="reveal">
             <summary>ما صيغة ملف مواقيت الصلاة؟</summary>
             <p>
               يجب أن يكون بصيغة CSV، وبالأعمدة التالية وبالترتيب نفسه:
@@ -739,7 +729,7 @@
           <details class="reveal">
             <summary>هل مواقيت ملف النموذج مناسبة لكل المدن؟</summary>
             <p>
-              لا. الملف المرفق نموذج لمواقيت مدينة الموصل. عند استخدامه لمدينة أخرى،
+              لا. الملف المرفق نموذج لمواقيت مدينة الموصل. عند استخدامه لمدينة عراقية أخرى،
               استبدل جميع المواقيت ببيانات صحيحة وراجعها قبل اعتمادها في المسجد.
             </p>
           </details>
@@ -768,8 +758,8 @@
             <p>ثبّت التطبيق على الهاتف أو شاشة المسجد، راجع المواقيت، ثم دع Android يتولى التنبيهات في الخلفية.</p>
           </div>
 
-          <a class="button button-primary js-apk-download" href="https://github.com/faswad/faswad.github.io/releases/latest/download/firas-prayer-display.apk">
-            تنزيل APK
+          <a class="button button-primary js-apk-download" href="assets/downloads/firas-prayer-display.apk" download="firas-prayer-display.apk">
+            تنزيل Salat_FM 1.0.1
           </a>
         </div>
       </div>
@@ -789,8 +779,9 @@
       <nav class="footer-links" aria-label="روابط قانونية">
         <a href="terms.html">شروط الاستخدام</a>
         <a href="privacy.html">سياسة الخصوصية</a>
-        <a href="#download">التنزيل</a>
-        <span class="footer-contact">واتساب: <bdi>@FirasAswad</bdi></span>
+        <a href="changelog.html">سجل التغييرات</a>
+        <a href="#download">الإصدار</a>
+        <a class="footer-contact" href="mailto:masjidstime@gmail.com">البريد: <bdi>masjidstime@gmail.com</bdi></a>
         <a href="../">الموقع الشخصي</a>
       </nav>
     </div>
@@ -805,7 +796,7 @@
     </div>
   </dialog>
 
-  <script src="assets/js/config.js?v=1.0.1-build2"></script>
-  <script src="assets/js/main-wide.js?v=1.0.1-build2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main-wide.js?v=14"></script>
 </body>
 </html>

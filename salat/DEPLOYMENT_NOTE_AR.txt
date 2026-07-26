@@ -1,0 +1,14 @@
+نشر Salat_FM 1.0.1 Build 2
+
+الملف الرسمي داخل الموقع:
+assets/downloads/firas-prayer-display.apk
+
+SHA-256:
+13d5cd4ae9028d0acd464c4878b2a43fa2d77e749548cbee9745e9a96336834d
+
+شهادة التوقيع SHA-256:
+44:69:FE:9F:CB:5B:7D:A9:3C:A4:12:32:E8:3E:28:AF:B8:71:AC:4C:89:C0:92:4A:BD:E9:B0:C6:17:DA:A4:8A
+
+لأفضل عدّ للتنزيلات: ارفع الملف نفسه من متصفح GitHub كـ Release asset باسم:
+firas-prayer-display.apk
+واجعل الـ Release هو Latest. عندها يفضّل الموقع ملف GitHub تلقائيًا ويعرض مجموع download_count، بينما تبقى نسخة الموقع احتياطية.

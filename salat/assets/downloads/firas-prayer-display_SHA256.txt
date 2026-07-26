@@ -1,8 +1,4 @@
-Salat_FM 1.0.1 — build 2
-Official Android release APK
-
+Salat_FM 1.0.1 — Build 2
+APK publication date: 2026-07-26
+File: firas-prayer-display.apk
 SHA-256: 13d5cd4ae9028d0acd464c4878b2a43fa2d77e749548cbee9745e9a96336834d
-File size: 31776692 bytes (30.3 MB)
-Package: com.firas.prayer_displayer
-Version: 1.0.1
-Build: 2

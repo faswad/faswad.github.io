@@ -3072,4 +3072,69 @@ aside,
   }
 }
 
+/* Salat_FM 1.0.1 additions */
+.release-pending-note {
+  display: grid;
+  gap: .45rem;
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(222, 166, 69, .6);
+  border-radius: 16px;
+  background: rgba(222, 166, 69, .1);
+}
+.release-pending-note strong { color: #8b5b08; font-size: 1.05rem; }
+.button.is-disabled,
+.button[aria-disabled="true"] { opacity: .62; cursor: not-allowed; filter: grayscale(.25); }
+.hash-value { direction: ltr; unicode-bidi: embed; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .85rem; }
+.legacy-download { margin-top: 1.25rem; padding: 1rem; border: 1px solid rgba(255,255,255,.14); border-radius: 14px; }
+.legacy-download summary { cursor: pointer; font-weight: 800; }
+.change-grid,
+.known-issues-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.change-card,
+.known-issue { padding: 1.25rem; border-radius: 18px; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.11); }
+.change-card h3, .known-issue strong { display: block; margin: 0 0 .5rem; color: var(--gold, #dcb467); font-size: 1.08rem; }
+.change-card p, .known-issue p { margin: 0; line-height: 1.85; }
+.section-link-line { text-align: center; margin-top: 1.4rem; }
+.support-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 1.4rem; align-items: start; }
+.support-copy,
+.support-form { padding: 1.4rem; border-radius: 20px; background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.11); }
+.support-form { display: grid; gap: .9rem; }
+.support-form label { display: grid; gap: .42rem; font-weight: 750; }
+.support-form input,
+.support-form textarea { width: 100%; box-sizing: border-box; border: 1px solid rgba(255,255,255,.2); border-radius: 11px; padding: .78rem .9rem; background: rgba(5,12,22,.76); color: inherit; font: inherit; }
+.support-form textarea { resize: vertical; }
+.support-form-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.form-status { min-height: 1.5em; margin: 0; color: #8fd3ae; font-weight: 700; }
+.external-badge { display: inline-block; margin-bottom: .55rem; padding: .32rem .68rem; border-radius: 999px; background: rgba(222,166,69,.14); border: 1px solid rgba(222,166,69,.42); color: var(--gold, #dcb467); font-size: .78rem; font-weight: 800; }
+.release-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+.release-table th, .release-table td { border: 1px solid rgba(255,255,255,.14); padding: .8rem; text-align: right; vertical-align: top; }
+.release-table th { background: rgba(255,255,255,.06); }
+@media (max-width: 820px) {
+  .change-grid, .known-issues-list, .support-layout { grid-template-columns: 1fr; }
+}
 
+
+/* Salat_FM 1.0.1 Build 2 final release details */
+.release-ready-note {
+  margin: 1.2rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(83, 212, 184, .38);
+  border-radius: 16px;
+  background: rgba(31, 142, 119, .12);
+  display: grid;
+  gap: .35rem;
+}
+.release-ready-note strong { color: #8ce4d0; }
+.security-explainer,
+.release-security-box {
+  margin-top: 1.15rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(220,180,103,.25);
+  background: rgba(220,180,103,.06);
+}
+.security-explainer h3 { margin: 0 0 .45rem; color: var(--gold, #dcb467); }
+.security-explainer p,
+.release-security-box p { margin: .35rem 0; line-height: 1.85; }
+.feature-card-highlight { border-color: rgba(220,180,103,.32); background: linear-gradient(180deg, rgba(220,180,103,.08), rgba(255,255,255,.04)); }
+[data-download-count] { font-weight: 800; font-variant-numeric: tabular-nums; }
