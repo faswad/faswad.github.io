@@ -43,7 +43,7 @@
   }
 
   $$("[data-version]").forEach((node) => {
-    node.textContent = config.version || "1.0.1";
+    node.textContent = config.version || "1.1.0";
   });
 
   $$("[data-build]").forEach((node) => {
@@ -113,7 +113,7 @@
       let currentAsset = null;
       for (const release of releases) {
         const releaseLabel = `${release.tag_name || ""} ${release.name || ""}`.toLowerCase();
-        if (!releaseLabel.includes("1.0.1")) continue;
+        if (!releaseLabel.includes("1.1.0")) continue;
         const candidate = (release.assets || []).find((asset) => {
           if (asset.name !== wantedName) return false;
           if (expectedSize && asset.size !== expectedSize) return false;
